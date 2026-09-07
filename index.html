@@ -254,6 +254,38 @@ tbody tr:hover{background:#eff6ff}
 .seg-empty{background:#fff;border:1px dashed #CBD5E1;border-radius:12px;padding:30px 20px;text-align:center;color:#64748B;font-size:13px;line-height:1.8}
 .seg-pipe{font-weight:700;color:#2F6BFF;white-space:nowrap}
 .seg-name{font-weight:600;color:#1F2A44}
+
+/* ==== 品系行卡改版 2026-09-07 ==== */
+.strain-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(620px,1fr));gap:12px}
+.strain-card{background:#fff;border-radius:var(--radius);padding:14px 18px;box-shadow:var(--shadow);border:1px solid transparent;cursor:pointer;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;animation:cardIn .45s ease backwards}
+.strain-card:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(30,58,138,.13);border-color:#BFDBFE}
+.strain-row1{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.strain-id{font-family:var(--mono);font-weight:800;color:#2F6BFF;font-size:15px}
+.strain-common{font-weight:700;font-size:13.5px;color:var(--navy);white-space:nowrap}
+.strain-fullname{font-size:12px;color:var(--text2);font-weight:400;flex:1 1 auto;min-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.badge-license{background:#FFF4E5;color:#B45309;border:1px solid #F5D9A8}
+.strain-price{font-family:var(--mono);font-weight:700;font-size:13.5px;margin-left:auto;white-space:nowrap}
+.strain-price.na{color:var(--text2);font-weight:600}
+.strain-pitch{margin-top:8px;font-size:13.5px;font-weight:600;line-height:1.65;color:var(--text)}
+.strain-row3{margin-top:8px;display:flex;align-items:flex-start;gap:6px;flex-wrap:wrap;font-size:12px;color:var(--text2);line-height:1.6}
+.strain-scene{flex:1 1 200px;min-width:0}
+.strain-modal-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+.strain-modal-head h2{margin:0;padding-right:34px;font-size:20px}
+.modal-price{font-family:var(--mono);font-weight:700;font-size:14px;background:#F1F5F9;border-radius:8px;padding:3px 10px;margin-left:auto;white-space:nowrap}
+.strain-tldr{margin-top:14px;background:linear-gradient(135deg,#EFF6FF,#F0FBFF);border:1px solid #BFDBFE;border-radius:10px;padding:12px 16px;font-size:14px;font-weight:600;line-height:1.7;color:#1D4ED8}
+.strain-tldr .tldr-tag{display:inline-block;font-size:11px;font-weight:800;color:#fff;background:#2F6BFF;border-radius:999px;padding:1px 10px;margin-right:8px;vertical-align:1px}
+.detail-hl{background:#fff;border:1px solid #E2E8F0;border-left:4px solid #2F6BFF;border-radius:10px;padding:12px 16px;margin-top:14px}
+.detail-hl p{font-size:13.5px;line-height:1.75;margin:4px 0}
+.detail-sec2{background:#F5FAFF}
+.detail-sec2 p{font-weight:600;color:var(--navy)}
+.detail-sec3 p{font-size:12.3px!important;color:var(--text2)}
+.detail-sec3 h3{font-size:11px!important}
+.tech-details{margin-top:16px;border:1px solid #E2E8F0;border-radius:10px;background:#FAFBFC;overflow:hidden}
+.tech-details summary{cursor:pointer;padding:10px 16px;font-size:13px;font-weight:700;color:var(--text2);list-style:none;user-select:none}
+.tech-details summary::-webkit-details-marker{display:none}
+.tech-details summary::before{content:'▸ ';color:var(--text2)}
+.tech-details[open] summary::before{content:'▾ '}
+.tech-details .tech-body{padding:0 16px 12px;font-size:12.8px;color:var(--text2);line-height:1.7}
 </style>
 </head>
 <body>
@@ -611,32 +643,47 @@ function renderStrains(){
   document.getElementById('strainCount').textContent=f.length+' 个品系';
   document.getElementById('strainGrid').innerHTML=f.map(function(s){
     var nm=s.strain_full_name||s.品系名称||'',d1s=s.disease_primary||'',d2s=s.disease_secondary||'';
-    var ff=s.fab_feature||s['特色/特点/优势']||'';
-    var pp=s.pitch_position||'',pa=(s.pitch_adv||'').split(/[；;]/).map(function(x){return x.trim()}).filter(function(x){return x}).slice(0,3);
     var pr=(s.price_intl_4wk_male>0)?s.price_intl_4wk_male:0;
-    var prl='<div class="strain-meta"><strong>国际单价</strong>（4周龄雄·营利机构）：'+(pr?'$'+pr.toFixed(2)+(s.price_dom_4wk_male?' <span style="color:var(--text2)">｜美境 $'+s.price_dom_4wk_male.toFixed(2)+'</span>':''):'询价')+'</div>';
-    var lcl=s.license_note?'<div class="strain-meta"><strong>许可</strong>：'+esc(trunc(s.license_note,110))+'</div>':'';
-    var body='';
-    if(pp)body+='<div class="pitch-line"><span class="pitch-tag">定位</span><span>'+esc(trunc(pp,92))+'</span></div>';
-    if(pa.length)body+='<div class="pitch-points">'+pa.map(function(x){return '<div class="pitch-point"><span>'+esc(trunc(x,82))+'</span></div>'}).join('')+'</div>';
-    else if(ff)body+='<div class="fab-row"><span class="fab-label">F</span><span class="fab-text">'+esc(trunc(ff,140))+'</span></div>';
-    return'<div class="strain-card" onclick="showStrain(\''+s.编号+'\')"><div class="strain-header"><div>'+(s.通用名?'<div class="strain-common">'+esc(s.通用名)+'</div>':'')+'<div class="strain-id">'+esc(s.编号)+'</div><div class="strain-name">'+esc(trunc(nm,70))+'</div></div><span class="badge '+diseaseColor(d1s)+'">'+esc(d1s||'未分类')+'</span></div><div class="disease-tags">'+(d2s?'<span class="badge badge-gray">'+esc(d2s)+'</span>':'')+(s.is_mmrrc?'<span class="badge badge-purple">MMRRC'+(s.mmrrc_id?' #'+esc(s.mmrrc_id):'')+'</span>':'')+'</div>'+body+prl+lcl+'<div class="genotype"><strong>用途：</strong>'+esc(trunc(s.主要应用场景||'',100))+'</div></div>'
+    var row1='<div class="strain-row1"><span class="strain-id">'+esc(s.编号)+'</span>'
+      +(s.通用名?'<span class="strain-common">'+esc(s.通用名)+'</span>':'')
+      +'<span class="strain-fullname" title="'+esc(nm)+'">'+esc(trunc(nm,64))+'</span>'
+      +(s.license_note?'<span class="badge badge-license">需许可</span>':'')
+      +'<span class="strain-price'+(pr?'':' na')+'">'+(pr?'$'+pr.toFixed(2):'询价')+'</span></div>';
+    var pitch=s.pitch_what?'<div class="strain-pitch">'+esc(s.pitch_what)+'</div>':'';
+    var row3='<div class="strain-row3"><span class="badge '+diseaseColor(d1s)+'">'+esc(d1s||'未分类')+'</span>'
+      +(d2s?'<span class="badge badge-gray">'+esc(d2s)+'</span>':'')
+      +(s.is_mmrrc?'<span class="badge badge-purple">MMRRC'+(s.mmrrc_id?' #'+esc(s.mmrrc_id):'')+'</span>':'')
+      +'<span class="strain-scene">'+esc(trunc(s.主要应用场景||'',60))+'</span></div>';
+    return '<div class="strain-card" onclick="showStrain(\''+s.编号+'\')">'+row1+pitch+row3+'</div>'
   }).join('')
 }
 function showStrain(id){
   var s=DATA.strains.find(function(x){return x.编号===id});if(!s)return;
   var nm=s.strain_full_name||s.品系名称||'';
   function linkify(t){if(!t)return'';return esc(t).replace(/(https?:\/\/[^\s<"]+)/g,function(u){return'<a href="'+u+'" target="_blank" rel="noopener noreferrer" style="color:#2F6BFF;word-break:break-all">'+u+'</a>'})}
-  var rows=[['是什么',s.pitch_what],['定位',s.pitch_position],['核心优势',s.pitch_adv],['独家性',s.pitch_exclusive],['关键证据',s.pitch_evidence],['解决的空白',s.pitch_fit]].filter(function(r){return r[1]});
-  var pitchHtml=rows.length?'<div class="detail-section"><h3>卖点分析</h3><div class="pitch-wrap"><table class="pitch-table">'+rows.map(function(r){return'<tr><th>'+r[0]+'</th><td>'+esc(r[1])+'</td></tr>'}).join('')+'</table></div></div>':'';
-  document.getElementById('strainModalContent').innerHTML='<button class="modal-close" onclick="closeModal()">✕</button><h2>'+esc(s.编号)+' '+(s.is_mmrrc?'<span class="badge badge-purple" style="font-size:11px;vertical-align:2px;margin-right:6px">MMRRC'+(s.mmrrc_id?' #'+esc(s.mmrrc_id):'')+'</span>':'')+'<span style="font-weight:400;font-size:14px;color:var(--text2)">'+esc(nm)+'</span></h2><a class="strain-link" href="https://www.jax.org/strain/'+esc(s.编号)+'" target="_blank" rel="noopener noreferrer"><svg class="svgi" viewBox="0 0 24 24" fill="none" stroke="url(#gLink)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="gLink" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2F6BFF"/><stop offset="1" stop-color="#00B8D9"/></linearGradient></defs><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> JAX官网页面</a>'
-    +pitchHtml
-    +'<div class="detail-section"><h3>疾病分类</h3><p><span class="badge '+diseaseColor(s.disease_primary)+'">'+esc(s.disease_primary||'未分类')+'</span> <span class="badge badge-gray" style="margin-left:6px">'+esc(s.disease_secondary||'-')+'</span></p></div>'
-    +'<div class="detail-section"><h3>价格与许可</h3><p><strong>国际单价（4周龄雄性·营利机构）：</strong>'+(s.price_intl_4wk_male?'$'+s.price_intl_4wk_male.toFixed(2)+(s.price_dom_4wk_male?'（美境对照 $'+s.price_dom_4wk_male.toFixed(2)+'）':''):'联系JAX询价')+'</p>'+(s.is_mmrrc?'<p><strong>MMRRC：</strong>该品系由NIH MMRRC保种'+(s.mmrrc_id?'（编号 '+esc(s.mmrrc_id)+'）':'')+'，亦可通过MMRRC渠道获取</p>':'')+(s.license_note?'<p><strong>许可要求：</strong>'+esc(s.license_note)+'</p>':'')+'</div>'+'<div class="detail-section"><h3>主要应用场景</h3><p>'+esc(s.主要应用场景||'-')+'</p></div>'
-    +'<div class="detail-section"><h3>基因型</h3><p>'+esc(s.genotype||s.品系名称||'详见JAX官网')+'</p></div>'
-    +'<div class="detail-section"><h3>作用机理</h3><p>'+esc(s.mechanism||'详见JAX官网')+'</p></div>'
-    +(s.关键文献?'<div class="detail-section"><h3>关键文献</h3><p style="line-height:1.8">'+linkify(s.关键文献)+'</p></div>':'')
-    +(s.其它品牌相关品系?'<div class="detail-section"><h3>其他品牌对比</h3><p>'+esc(s.其它品牌相关品系)+'</p></div>':'');
+  function dedupeTexts(arr){var out=[],norms=[];arr.forEach(function(t){if(!t)return;t=String(t).trim();if(!t)return;var n=t.replace(/\s+/g,'');var dup=norms.some(function(x){return x===n||x.indexOf(n)>=0||n.indexOf(x)>=0});if(!dup){out.push(t);norms.push(n)}});return out}
+  var pr=(s.price_intl_4wk_male>0)?s.price_intl_4wk_male:0;
+  var head='<button class="modal-close" onclick="closeModal()">✕</button>'
+    +'<div class="strain-modal-head"><h2>'+esc(s.编号)+' <span style="font-weight:400;font-size:14px;color:var(--text2)">'+esc(nm)+'</span></h2>'
+    +(s.is_mmrrc?'<span class="badge badge-purple">MMRRC'+(s.mmrrc_id?' #'+esc(s.mmrrc_id):'')+'</span>':'')
+    +(s.license_note?'<span class="badge badge-license">需许可</span>':'')
+    +'<span class="modal-price">'+(pr?'$'+pr.toFixed(2):'询价')+'</span></div>'
+    +'<a class="strain-link" href="https://www.jax.org/strain/'+esc(s.编号)+'" target="_blank" rel="noopener noreferrer">JAX官网页面 ↗</a>';
+  var tldr=s.pitch_what?'<div class="strain-tldr"><span class="tldr-tag">一句话介绍</span>'+esc(s.pitch_what)+'</div>':'';
+  var dis='<div class="detail-section"><h3>疾病分类</h3><p><span class="badge '+diseaseColor(s.disease_primary)+'">'+esc(s.disease_primary||'未分类')+'</span> <span class="badge badge-gray" style="margin-left:6px">'+esc(s.disease_secondary||'-')+'</span></p></div>';
+  var fa=dedupeTexts([s.主要应用场景,s.pitch_fit]);
+  var sec1=fa.length?'<div class="detail-section detail-hl"><h3>功能与应用</h3>'+fa.map(function(t){return'<p>'+esc(t)+'</p>'}).join('')+'</div>':'';
+  var feats=dedupeTexts((s['特色/特点/优势']||'').split(/[；;\n]/).concat((s.pitch_adv||'').split(/[；;\n]/)).concat([s.pitch_position]).map(function(x){return(x||'').trim()}).filter(function(x){return x}));
+  var sec2=feats.length?'<div class="detail-section detail-hl detail-sec2"><h3>特点与优势</h3>'+feats.map(function(t){return'<p>· '+esc(t)+'</p>'}).join('')+'</div>':'';
+  var ev=[];
+  if(s.关键文献)ev.push('<p style="line-height:1.8">'+linkify(s.关键文献)+'</p>');
+  dedupeTexts([s.pitch_evidence,s.pitch_exclusive]).forEach(function(t){ev.push('<p>'+esc(t)+'</p>')});
+  var sec3=ev.length?'<div class="detail-section detail-sec3"><h3>证据与竞对参考</h3>'+ev.join('')+'</div>':'';
+  var priceSec='<div class="detail-section"><h3>价格与许可</h3><p><strong>国际单价（4周龄雄性·营利机构）：</strong>'+(s.price_intl_4wk_male?'$'+s.price_intl_4wk_male.toFixed(2)+(s.price_dom_4wk_male?'（美境对照 $'+s.price_dom_4wk_male.toFixed(2)+'）':''):'联系JAX询价')+'</p>'
+    +(s.is_mmrrc?'<p><strong>MMRRC：</strong>该品系由NIH MMRRC保种'+(s.mmrrc_id?'（编号 '+esc(s.mmrrc_id)+'）':'')+'，亦可通过MMRRC渠道获取</p>':'')
+    +(s.license_note?'<p><strong>许可要求：</strong>'+esc(s.license_note)+'</p>':'')+'</div>';
+  var tech='<details class="tech-details"><summary>技术细节（基因型 / 作用机理）</summary><div class="tech-body"><p><strong>基因型：</strong>'+esc(s.genotype||s.品系名称||'详见JAX官网')+'</p><p><strong>作用机理：</strong>'+esc(s.mechanism||'详见JAX官网')+'</p></div></details>';
+  document.getElementById('strainModalContent').innerHTML=head+tldr+dis+sec1+sec2+sec3+priceSec+tech;
   document.getElementById('strainModal').classList.add('show')
 }
 function closeModal(){document.getElementById('strainModal').classList.remove('show')}
@@ -1047,7 +1094,7 @@ strains:function(){
   var s1=DATA.strains.map(function(s){
     var pi=s.price_intl_4wk_male,pd=s.price_dom_4wk_male;
     return[_gv(s,'编号'),_gv(s,'通用名')||_gv(s,'品系名称'),_gv(s,'strain_full_name')||_gv(s,'品系名称'),_gv(s,'disease_primary'),_gv(s,'disease_secondary'),_gv(s,'相关疾病领域'),_gv(s,'主要应用场景'),_gv(s,'特色/特点/优势'),_gv(s,'pitch_what'),_gv(s,'pitch_position'),_gv(s,'pitch_adv'),_gv(s,'pitch_exclusive'),_gv(s,'pitch_evidence'),_gv(s,'pitch_fit'),_gv(s,'mechanism'),_gv(s,'关键文献'),_gv(s,'其它品牌相关品系'),pi,pd,pi?'':'询价',s.is_mmrrc?('MMRRC '+_gv(s,'mmrrc_id')):'',_gv(s,'license_note'),_gv(s,'备注'),_gv(s,'source_url')];});
-  return{label:'JAX品系库',sheets:[{name:'品系库',cols:[{l:'编号',w:55},{l:'通用名',w:110},{l:'品系全名',w:220},{l:'主要领域',w:75},{l:'次要领域',w:90},{l:'相关疾病领域',w:110},{l:'主要应用场景',w:200},{l:'特色/特点/优势',w:260},{l:'是什么',w:180},{l:'市场定位',w:160},{l:'核心优势',w:200},{l:'独家性',w:150},{l:'关键证据',w:200},{l:'解决的空白',w:150},{l:'作用机理',w:180},{l:'关键文献',w:180},{l:'其它品牌相关品系',w:120},{l:'国际单价$·4周龄雄',w:80,t:'n'},{l:'境内单价$·4周龄雄',w:80,t:'n'},{l:'价格说明',w:60},{l:'MMRRC来源',w:90},{l:'许可标注',w:220},{l:'备注',w:200},{l:'官网链接',w:150}],rows:s1}]}},
+  return{label:'JAX品系库',sheets:[{name:'品系库',cols:[{l:'编号',w:55},{l:'通用名',w:110},{l:'品系全名',w:220},{l:'主要领域',w:75},{l:'次要领域',w:90},{l:'相关疾病领域',w:110},{l:'主要应用场景',w:200},{l:'特色/特点/优势',w:260},{l:'一句话介绍',w:180},{l:'市场定位',w:160},{l:'核心优势',w:200},{l:'独家性',w:150},{l:'关键证据',w:200},{l:'解决的空白',w:150},{l:'作用机理',w:180},{l:'关键文献',w:180},{l:'其它品牌相关品系',w:120},{l:'国际单价$·4周龄雄',w:80,t:'n'},{l:'境内单价$·4周龄雄',w:80,t:'n'},{l:'价格说明',w:60},{l:'MMRRC来源',w:90},{l:'许可标注',w:220},{l:'备注',w:200},{l:'官网链接',w:150}],rows:s1}]}},
 recommendations:function(){return{label:'品系推荐',sheets:[{name:'品系推荐',cols:[{l:'编号',w:40},{l:'疾病领域',w:90},{l:'疾病类型/适应症',w:130},{l:'药物类型',w:80},{l:'药物评价场景',w:150},{l:'JAX品系编号',w:60},{l:'JAX品系名称',w:100},{l:'品系关键特征/推荐理由',w:320},{l:'相关文献',w:280}],rows:DATA.diseaseRecommendations.map(function(r){return[_gv(r,'编号'),_gv(r,'疾病领域'),_gv(r,'疾病类型/适应症'),_gv(r,'药物类型'),_gv(r,'药物评价场景'),_gv(r,'JAX品系编号'),_gv(r,'JAX品系名称'),_gv(r,'品系关键特征/推荐理由'),_gv(r,'相关文献')];})}]}},
 competitors:function(){
   var s1=DATA.competitors.map(function(c){return[_gv(c,'编号'),_gv(c,'竞对企业'),_gv(c,'公司英文名'),_gv(c,'类型'),_gv(c,'与JAX重叠的核心品系'),_gv(c,'替代性强弱'),_gv(c,'竞对核心优势'),_gv(c,'竞对核心劣势'),(c['近期动态']||[]).length,_gv(c,'更新时间')];});
