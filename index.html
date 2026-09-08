@@ -265,9 +265,9 @@ tbody tr:hover{background:#eff6ff}
 .seg-pipe-table th{white-space:nowrap}
 
 /* ==== 品系行卡改版 2026-09-07 ==== */
-.strain-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(620px,1fr));gap:12px}
-.strain-card{background:#fff;border-radius:var(--radius);padding:14px 18px;box-shadow:var(--shadow);border:1px solid transparent;cursor:pointer;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;animation:cardIn .45s ease backwards}
-.strain-card:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(30,58,138,.13);border-color:#BFDBFE}
+.strain-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:16px}
+.strain-card{background:#fff;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);border:1px solid transparent;cursor:pointer;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;animation:cardIn .45s ease backwards}
+.strain-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);border-color:#bfdbfe}
 .strain-row1{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .strain-id{font-family:var(--mono);font-weight:800;color:#2F6BFF;font-size:15px}
 .strain-common{font-weight:700;font-size:13.5px;color:var(--navy);white-space:nowrap}
@@ -473,18 +473,17 @@ function renderStrains(){
   document.getElementById('strainCount').textContent=f.length+' 个品系';
   document.getElementById('strainGrid').innerHTML=f.map(function(s){
     var nm=s.strain_full_name||s.品系名称||'',d1s=s.disease_primary||'',d2s=s.disease_secondary||'';
+    var ff=s.fab_feature||s['特色/特点/优势']||'';
+    var pp=s.pitch_position||'',pa=(s.pitch_adv||'').split(/[；;]/).map(function(x){return x.trim()}).filter(function(x){return x}).slice(0,3);
     var pr=(s.price_intl_4wk_male>0)?s.price_intl_4wk_male:0;
-    var row1='<div class="strain-row1"><span class="strain-id">'+esc(s.编号)+'</span>'
-      +(s.通用名?'<span class="strain-common">'+esc(s.通用名)+'</span>':'')
-      +'<span class="strain-fullname" title="'+esc(nm)+'">'+esc(trunc(nm,64))+'</span>'
-      +(s.license_note?'<span class="badge badge-license">需许可</span>':'')
-      +'<span class="strain-price'+(pr?'':' na')+'">'+(pr?'$'+pr.toFixed(2):'询价')+'</span></div>';
-    var pitch=s.pitch_what?'<div class="strain-pitch">'+esc(s.pitch_what)+'</div>':'';
-    var row3='<div class="strain-row3"><span class="badge '+diseaseColor(d1s)+'">'+esc(d1s||'未分类')+'</span>'
-      +(d2s?'<span class="badge badge-gray">'+esc(d2s)+'</span>':'')
-      +(s.is_mmrrc?'<span class="badge badge-purple">MMRRC'+(s.mmrrc_id?' #'+esc(s.mmrrc_id):'')+'</span>':'')
-      +'<span class="strain-scene">'+esc(trunc(s.主要应用场景||'',60))+'</span></div>';
-    return '<div class="strain-card" onclick="showStrain(\''+s.编号+'\')">'+row1+pitch+row3+'</div>'
+    var pgN=(s.price_by_genotype||[]).filter(function(p){return p&&p.price_usd>0}).length;
+    var prl='<div class="strain-meta"><strong>参考单价</strong>（4周龄雄·营利机构·国际）：'+(pr?'$'+pr.toFixed(2)+(pgN>1?' <span style="color:var(--text2)">·'+pgN+'档基因型分档价</span>':''):'询价')+'</div>';
+    var lcl=s.license_note?'<div class="strain-meta"><strong>许可</strong>：'+esc(trunc(s.license_note,110))+'</div>':'';
+    var body='';
+    if(pp)body+='<div class="pitch-line"><span class="pitch-tag">定位</span><span>'+esc(trunc(pp,92))+'</span></div>';
+    if(pa.length)body+='<div class="pitch-points">'+pa.map(function(x){return '<div class="pitch-point"><span>'+esc(trunc(x,82))+'</span></div>'}).join('')+'</div>';
+    else if(ff)body+='<div class="fab-row"><span class="fab-label">F</span><span class="fab-text">'+esc(trunc(ff,140))+'</span></div>';
+    return'<div class="strain-card" onclick="showStrain(\''+s.编号+'\')"><div class="strain-header"><div>'+(s.通用名?'<div class="strain-common">'+esc(s.通用名)+'</div>':'')+'<div class="strain-id">'+esc(s.编号)+'</div><div class="strain-name">'+esc(trunc(nm,70))+'</div></div><span class="badge '+diseaseColor(d1s)+'">'+esc(d1s||'未分类')+'</span></div><div class="disease-tags">'+(d2s?'<span class="badge badge-gray">'+esc(d2s)+'</span>':'')+(s.is_mmrrc?'<span class="badge badge-purple">MMRRC'+(s.mmrrc_id?' #'+esc(s.mmrrc_id):'')+'</span>':'')+'</div>'+body+prl+lcl+'<div class="genotype"><strong>用途：</strong>'+esc(trunc(s.主要应用场景||'',100))+'</div></div>'
   }).join('')
 }
 function showStrain(id){
