@@ -289,12 +289,12 @@ tbody tr:hover{background:#eff6ff}
 .detail-sec2 p{font-weight:600;color:var(--navy)}
 .detail-sec3 p{font-size:12.3px!important;color:var(--text2)}
 .detail-sec3 h3{font-size:11px!important}
-.tech-details{margin-top:16px;border:1px solid #E2E8F0;border-radius:10px;background:#FAFBFC;overflow:hidden}
-.tech-details summary{cursor:pointer;padding:10px 16px;font-size:13px;font-weight:700;color:var(--text2);list-style:none;user-select:none}
+.tech-details{margin-top:16px}
+.tech-details summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--text2);list-style:none;user-select:none}
 .tech-details summary::-webkit-details-marker{display:none}
 .tech-details summary::before{content:'▸ ';color:var(--text2)}
 .tech-details[open] summary::before{content:'▾ '}
-.tech-details .tech-body{padding:0 16px 12px;font-size:12.8px;color:var(--text2);line-height:1.7}
+.tech-details .tech-body{padding:8px 0 0;font-size:12.8px;color:var(--text2);line-height:1.7}
 </style>
 </head>
 <body>
@@ -505,17 +505,29 @@ function showStrain(id){
   var feats=dedupeTexts((s['特色/特点/优势']||'').split(/[；;\n]/).concat((s.pitch_adv||'').split(/[；;\n]/)).concat([s.pitch_position]).map(function(x){return(x||'').trim()}).filter(function(x){return x}));
   var sec2=feats.length?'<div class="detail-section detail-hl detail-sec2"><h3>特点与优势</h3>'+feats.map(function(t){return'<p>· '+esc(t)+'</p>'}).join('')+'</div>':'';
   var ev=[];
-  if(s.关键文献)ev.push('<p style="line-height:1.8">'+linkify(s.关键文献)+'</p>');
-  dedupeTexts([s.pitch_evidence,s.pitch_exclusive]).forEach(function(t){ev.push('<p>'+esc(t)+'</p>')});
-  var sec3=ev.length?'<div class="detail-section detail-sec3"><h3>证据与竞对参考</h3>'+ev.join('')+'</div>':'';
+  if(s.关键文献)String(s.关键文献).split(/\n+/).forEach(function(t){t=t.trim();if(t)ev.push('<p style="line-height:1.8">'+linkify(t)+'</p>')});
+  if(s.pitch_evidence)ev.push('<p>'+esc(s.pitch_evidence)+'</p>');
+  var sec3=ev.length?'<div class="detail-section detail-sec3"><h3>文献参考</h3>'+ev.join('')+'</div>':'';
+  function compLink(t){
+    var out=esc(t);
+    out=out.replace(/(^|[^0-9A-Za-z>])(\d{6})(?![0-9])/g,function(m,p,num){
+      if(!DATA.strains.some(function(x){return x.编号===num}))return p+num;
+      return p+'<a href="javascript:void(0)" onclick="showStrain(\''+num+'\')" style="color:#2F6BFF;font-family:var(--mono);font-weight:600;cursor:pointer">'+num+'</a>';
+    });
+    return out;
+  }
+  var sec4=s.pitch_exclusive?'<div class="detail-section"><h3>对标品系</h3><p>'+compLink(s.pitch_exclusive)+'</p></div>':'';
   var pgA=(s.price_by_genotype||[]).filter(function(p){return p&&p.price_usd>0});
   var priceHead='参考单价（4周龄雄性·营利机构·国际）：';
-  var priceBody=pgA.length>1?'<p style="font-weight:600;margin-bottom:4px">'+priceHead+'共'+pgA.length+'个基因型分档</p>'+pgA.map(function(p){return'<p style="margin:3px 0 3px 10px;line-height:1.6"><span style="color:var(--text2)">▸</span> '+esc(p.genotype_desc)+'：<strong style="white-space:nowrap">$'+p.price_usd.toFixed(2)+'</strong></p>'}).join(''):'<p><strong>'+priceHead+'</strong>'+(pgA.length===1?'$'+pgA[0].price_usd.toFixed(2):(s.price_intl_4wk_male>0?'$'+s.price_intl_4wk_male.toFixed(2):'联系JAX询价'))+'</p>';
-  var priceSec='<div class="detail-section"><h3>价格与许可</h3>'+priceBody
-    +(s.is_mmrrc?'<p><strong>MMRRC：</strong>该品系由NIH MMRRC保种'+(s.mmrrc_id?'（编号 '+esc(s.mmrrc_id)+'）':'')+'，亦可通过MMRRC渠道获取</p>':'')
-    +(s.license_note?'<p><strong>许可要求：</strong>'+esc(s.license_note)+'</p>':'')+'</div>';
+  var pUniq=[];pgA.forEach(function(p){if(pUniq.indexOf(p.price_usd)<0)pUniq.push(p.price_usd)});
+  var priceBody='<p><strong>'+priceHead+'</strong>'+(pgA.length===0?(s.price_intl_4wk_male>0?'$'+s.price_intl_4wk_male.toFixed(2):'联系JAX询价'):(pUniq.length===1?'<strong style="white-space:nowrap">$'+pgA[0].price_usd.toFixed(2)+'</strong>':pgA.map(function(p){return esc(p.genotype_desc)+'：<strong style="white-space:nowrap">$'+p.price_usd.toFixed(2)+'</strong>'}).join('；')))+'</p>';
+  var priceSec='<div class="detail-section"><h3>参考价格</h3>'+priceBody+'</div>';
+  var lic='';
+  if(s.license_note)lic+='<p>'+esc(s.license_note)+'</p>';
+  if(s.is_mmrrc)lic+='<p><strong>MMRRC：</strong>该品系由NIH MMRRC保种'+(s.mmrrc_id?'（编号 '+esc(s.mmrrc_id)+'）':'')+'，亦可通过MMRRC渠道获取</p>';
+  var licSec=lic?'<div class="detail-section"><h3>许可</h3>'+lic+'</div>':'';
   var tech='<details class="tech-details"><summary>技术细节（基因型 / 作用机理）</summary><div class="tech-body"><p><strong>基因型：</strong>'+esc(s.genotype||s.品系名称||'详见JAX官网')+'</p><p><strong>作用机理：</strong>'+esc(s.mechanism||'详见JAX官网')+'</p></div></details>';
-  document.getElementById('strainModalContent').innerHTML=head+tldr+dis+sec1+sec2+sec3+priceSec+tech;
+  document.getElementById('strainModalContent').innerHTML=head+tldr+dis+sec1+sec2+sec3+sec4+priceSec+licSec+tech;
   var msc=document.getElementById('strainModalContent');if(msc)msc.scrollTop=0;
   document.getElementById('strainModal').classList.add('show')
 }
