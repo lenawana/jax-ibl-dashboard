@@ -516,6 +516,7 @@ function showStrain(id){
     +(s.license_note?'<p><strong>许可要求：</strong>'+esc(s.license_note)+'</p>':'')+'</div>';
   var tech='<details class="tech-details"><summary>技术细节（基因型 / 作用机理）</summary><div class="tech-body"><p><strong>基因型：</strong>'+esc(s.genotype||s.品系名称||'详见JAX官网')+'</p><p><strong>作用机理：</strong>'+esc(s.mechanism||'详见JAX官网')+'</p></div></details>';
   document.getElementById('strainModalContent').innerHTML=head+tldr+dis+sec1+sec2+sec3+priceSec+tech;
+  var msc=document.getElementById('strainModalContent');if(msc)msc.scrollTop=0;
   document.getElementById('strainModal').classList.add('show')
 }
 function closeModal(){document.getElementById('strainModal').classList.remove('show')}
