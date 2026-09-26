@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1e3a8a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="JAX情报">
+<title>JAX市场情报中心 · 移动版</title>
+<style>
+:root{
+  --navy:#1e3a8a;--brand:#2F6BFF;--bg:#f1f5f9;--card:#fff;--text:#0f172a;--muted:#64748b;
+  --line:#e2e8f0;--radius:12px;--ac:#2F6BFF;--acbg:#eff6ff;--acfg:#2563eb;
+  --shadow:0 1px 3px rgba(15,23,42,.07),0 1px 2px rgba(15,23,42,.05);
+  --mono:ui-monospace,'SF Mono','Cascadia Code',Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',system-ui,sans-serif;
+  background:var(--bg);color:var(--text);font-size:14px;line-height:1.55;
+  padding-bottom:calc(64px + env(safe-area-inset-bottom));overflow-wrap:anywhere}
+a{color:var(--acfg);text-decoration:none}
+button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
+
+/* ---------- 顶栏 ---------- */
+.topbar{position:sticky;top:0;z-index:30;background:linear-gradient(135deg,#1e3a8a,#2563eb);
+  color:#fff;padding:12px 16px 10px;border-radius:0 0 16px 16px;box-shadow:var(--shadow)}
+.topbar .brand{font-size:17px;font-weight:700;letter-spacing:.5px}
+.topbar .sub{font-size:11px;opacity:.75;margin-top:1px}
+.topbar .upd{float:right;font-size:11px;background:rgba(255,255,255,.16);padding:3px 8px;border-radius:99px;margin-top:2px}
+
+/* ---------- 页面容器 ---------- */
+main{padding:12px 12px 8px;max-width:640px;margin:0 auto}
+.page{display:none}
+.page.active{display:block}
+.toolrow{display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.search{flex:1;display:flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);
+  border-radius:10px;padding:8px 10px;box-shadow:var(--shadow)}
+.search svg{flex:none;width:15px;height:15px;stroke:var(--muted)}
+.search input{flex:1;border:0;outline:0;font-size:14px;background:transparent;min-width:0;color:var(--text)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:2px 0 8px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;font-size:12px;padding:5px 11px;border-radius:99px;background:var(--card);
+  border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.chip.on{background:var(--ac);border-color:var(--ac);color:#fff;font-weight:600}
+.subchip{flex:none;font-size:12px;padding:4px 10px;border-radius:8px;background:#fff;border:1px solid var(--line);color:var(--muted)}
+.subchip.on{background:var(--acbg);border-color:#bfdbfe;color:var(--acfg);font-weight:600}
+.count{font-size:11px;color:var(--muted);margin:2px 2px 8px}
+
+/* ---------- 卡片 ---------- */
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:12px 13px;margin-bottom:9px;border:1px solid transparent;transition:transform .12s ease,opacity .12s ease}
+.card:active{transform:scale(.985);opacity:.92}
+.card .r1{display:flex;align-items:flex-start;gap:8px}
+.card .no{flex:none;font-family:var(--mono);font-size:11px;color:var(--acfg);background:var(--acbg);
+  border-radius:6px;padding:2px 6px;margin-top:2px;font-weight:600}
+.card .name{font-size:15px;font-weight:600;flex:1;min-width:0}
+.card .desc{font-size:12.5px;color:var(--muted);margin-top:5px;display:-webkit-box;-webkit-line-clamp:2;
+  -webkit-box-orient:vertical;overflow:hidden}
+.meta{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.tag{font-size:10.5px;padding:2px 7px;border-radius:6px;background:var(--acbg);color:var(--acfg);font-weight:500}
+.tag.g{background:#ecfdf5;color:#059669}
+.tag.o{background:#fffbeb;color:#b45309}
+.tag.r{background:#fef2f2;color:#dc2626}
+.tag.p{background:#f5f3ff;color:#7c3aed}
+.tag.n{background:#f1f5f9;color:#475569}
+.price{flex:none;font-size:12px;font-weight:700;color:#059669;background:#ecfdf5;border-radius:6px;padding:2px 7px;margin-top:1px}
+.price.ask{color:#b45309;background:#fffbeb}
+.sechead{font-size:13px;font-weight:700;color:var(--navy);margin:16px 2px 8px;display:flex;align-items:center;gap:6px}
+.sechead::before{content:"";width:3px;height:13px;background:var(--brand);border-radius:2px}
+
+/* ---------- 首页 ---------- */
+.statgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-bottom:6px}
+.stat{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:10px 4px;text-align:center}
+.stat b{display:block;font-size:19px;color:var(--navy);font-weight:800;font-family:var(--mono)}
+.stat span{font-size:10.5px;color:var(--muted)}
+.quick{display:flex;gap:7px;overflow-x:auto;padding:6px 0 2px;scrollbar-width:none}
+.quick::-webkit-scrollbar{display:none}
+.qcard{flex:none;background:var(--card);border-radius:10px;box-shadow:var(--shadow);padding:9px 13px;
+  font-size:12.5px;color:var(--text);border:1px solid var(--line);font-weight:500}
+.qcard b{color:var(--acfg)}
+.hint{font-size:11.5px;color:var(--muted);background:var(--card);border-radius:10px;padding:9px 12px;
+  box-shadow:var(--shadow);margin-top:10px;line-height:1.7}
+.errbox{background:#fff;border:2px dashed #fca5a5;border-radius:14px;padding:28px 18px;text-align:center;color:#b91c1c;font-size:14px;margin-top:30px}
+.errbox button{margin-top:12px;background:#dc2626;color:#fff;border-radius:8px;padding:8px 22px;font-weight:600}
+
+/* ---------- 竞对 ---------- */
+.rival-sec{font-size:12.5px;margin-top:6px}
+.rival-sec .lbl{font-weight:700;color:var(--text);margin-bottom:2px}
+.rival-sec ul{padding-left:16px;color:var(--muted)}
+.rival-sec li{margin:3px 0}
+
+/* ---------- 动态 ---------- */
+.news-date{font-size:11px;color:var(--muted);font-family:var(--mono);margin:12px 2px 6px}
+.news-date:first-child{margin-top:2px}
+
+/* ---------- 详情抽屉 ---------- */
+#mask{position:fixed;inset:0;background:rgba(15,23,42,.45);z-index:40;opacity:0;pointer-events:none;transition:opacity .22s ease}
+#mask.open{opacity:1;pointer-events:auto}
+#sheet{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--card);
+  border-radius:18px 18px 0 0;max-height:86vh;display:flex;flex-direction:column;
+  transform:translateY(100%);transition:transform .26s cubic-bezier(.22,.9,.3,1);box-shadow:0 -8px 30px rgba(15,23,42,.2)}
+#sheet.open{transform:translateY(0)}
+.sheet-grip{flex:none;width:38px;height:4px;border-radius:2px;background:#cbd5e1;margin:9px auto 4px}
+#sheetClose{position:absolute;top:10px;right:12px;width:28px;height:28px;border-radius:50%;
+  background:#f1f5f9;color:#475569;font-size:15px;line-height:28px;text-align:center;font-weight:700}
+#sheetBody{overflow-y:auto;-webkit-overflow-scrolling:touch;padding:4px 16px calc(20px + env(safe-area-inset-bottom))}
+#sheetBody h3{font-size:17px;font-weight:700;line-height:1.45;margin:8px 0 4px;padding-right:30px}
+#sheetBody h4{font-size:13px;color:var(--navy);margin:14px 0 5px;font-weight:700}
+#sheetBody p{font-size:13.5px;color:#334155;margin:3px 0}
+#sheetBody .kv{display:flex;gap:8px;font-size:13px;margin:5px 0}
+#sheetBody .kv b{flex:none;width:76px;color:var(--muted);font-weight:500;font-size:12.5px}
+#sheetBody .kv span{flex:1;min-width:0}
+.ptable{width:100%;border-collapse:collapse;font-size:12.5px;margin:6px 0}
+.ptable th{background:#f1f5f9;color:#475569;font-weight:600;text-align:left;padding:6px 8px;font-size:11.5px}
+.ptable td{border-top:1px solid var(--line);padding:6px 8px;vertical-align:top}
+.ptable .num{font-family:var(--mono);white-space:nowrap;font-weight:600}
+.pitchbox{background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:9px 11px;margin:6px 0}
+.pitchbox .plbl{font-size:11px;font-weight:700;color:var(--acfg);margin-bottom:3px}
+.pitchbox p{font-size:13px;margin:0}
+.extlink{display:inline-flex;align-items:center;gap:4px;background:var(--acbg);color:var(--acfg);
+  font-size:12.5px;font-weight:600;border-radius:8px;padding:7px 12px;margin:8px 6px 0 0}
+.rawbtn{display:block;width:100%;text-align:center;background:var(--navy);color:#fff;border-radius:10px;
+  padding:10px;font-weight:600;font-size:14px;margin-top:12px}
+
+/* ---------- 底部Tab ---------- */
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:35;background:rgba(255,255,255,.96);
+  backdrop-filter:blur(10px);border-top:1px solid var(--line);
+  padding:5px 4px calc(5px + env(safe-area-inset-bottom));display:flex}
+.tabbar button{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;
+  font-size:10.5px;color:#94a3b8;padding:3px 0}
+.tabbar button svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round}
+.tabbar button.on{color:var(--brand);font-weight:600}
+
+/* ---------- 打印 ---------- */
+@media print{
+  .tabbar,#sheet,#mask,.topbar .upd{display:none!important}
+  body{padding:0;background:#fff}
+  .page{display:block!important;page-break-after:always}
+  .card{box-shadow:none;border:1px solid var(--line)}
+}
+@media (prefers-reduced-motion:reduce){
+  *,#sheet,#mask{transition:none!important}
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="upd" id="updDate">…</div>
+  <h1 class="brand" style="font-size:17px;font-weight:700;letter-spacing:.5px">JAX市场情报中心</h1>
+  <div class="sub">澄天生物 · iBL ｜ 移动版</div>
+</div>
+
+<main id="main">
+  <!-- 首页 -->
+  <section id="page-home" class="page active">
+    <div class="statgrid" id="statGrid"></div>
+    <div class="toolrow" style="margin-top:10px">
+      <div class="search">
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="homeSearch" placeholder="搜品系编号 / 名称 / 疾病 / 靶点…" enterkeyhint="search">
+      </div>
+    </div>
+    <div class="sechead">疾病领域快捷入口</div>
+    <div class="quick" id="quickDomains"></div>
+    <div class="sechead">最新行业动态</div>
+    <div id="homeNews"></div>
+    <div class="hint">📱 手机浏览器菜单选「<b>添加到主屏幕</b>」，即可像 App 一样全屏使用。<br>数据与桌面版仪表盘同源，每日自动更新后刷新本页即为最新。</div>
+  </section>
+
+  <!-- 品系 -->
+  <section id="page-strains" class="page">
+    <div class="toolrow">
+      <div class="search">
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="strainSearch" placeholder="编号 / 名称 / 领域 / 基因 / 应用…">
+      </div>
+    </div>
+    <div class="chips" id="strainChips"></div>
+    <div class="count" id="strainCount"></div>
+    <div id="strainList"></div>
+  </section>
+
+  <!-- 客户 -->
+  <section id="page-custs" class="page">
+    <div class="toolrow">
+      <div class="search">
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="custSearch" placeholder="客户名 / 药物 / 靶点 / 疾病领域…">
+      </div>
+    </div>
+    <div class="chips" id="custChips"></div>
+    <div class="count" id="custCount"></div>
+    <div id="custList"></div>
+  </section>
+
+  <!-- 竞对 -->
+  <section id="page-comps" class="page">
+    <div class="toolrow">
+      <div class="search">
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="compSearch" placeholder="搜竞对企业 / 品系 / 动态关键词…">
+      </div>
+    </div>
+    <div class="count" id="compCount"></div>
+    <div id="compList"></div>
+  </section>
+
+  <!-- 动态 -->
+  <section id="page-news" class="page">
+    <div class="chips" id="newsMode">
+      <button class="chip on" data-m="news">行业动态</button>
+      <button class="chip" data-m="lit">文献情报</button>
+    </div>
+    <div id="newsPane">
+      <div class="toolrow">
+        <div class="search">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="newsSearch" placeholder="搜标题 / 描述 / 来源…">
+        </div>
+      </div>
+      <div class="chips" id="newsChips"></div>
+      <div class="count" id="newsCount"></div>
+      <div id="newsList"></div>
+    </div>
+    <div id="litPane" style="display:none">
+      <div class="toolrow">
+        <div class="search">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="litSearch" placeholder="搜品系 / 疾病 / 期刊 / 标题…">
+        </div>
+      </div>
+      <div class="count" id="litCount"></div>
+      <div id="litList"></div>
+    </div>
+  </section>
+</main>
+
+<nav class="tabbar" id="tabbar">
+  <button data-t="home" class="on"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>首页</button>
+  <button data-t="strains"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v6m0 0c-4 0-7 2.5-7 6m7-6c4 0 7 2.5 7 6M8 21c0-3 1.8-5 4-5s4 2 4 5M5 15v6m14-6v6"/></svg>品系</button>
+  <button data-t="custs"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 14.6c2.4.2 4.2 1.7 4.8 4.4"/></svg>客户</button>
+  <button data-t="comps"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M4 21V10l5-4 5 4v11M14 21V13h6v8M4 21h16"/><path d="M7 14h2m-2 3h2"/></svg>竞对</button>
+  <button data-t="news"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M4 5h13a2 2 0 0 1 2 2v12H6a2 2 0 0 1-2-2z"/><path d="M19 19a2 2 0 0 0 2-2V8h-2M7.5 9h7m-7 3.5h7m-7 3.5h4.5"/></svg>动态</button>
+</nav>
+
+<div id="mask"></div>
+<div id="sheet" role="dialog" aria-modal="true">
+  <div class="sheet-grip"></div>
+  <button id="sheetClose" aria-label="关闭">✕</button>
+  <div id="sheetBody"></div>
+</div>
+
+<script src="dashboard_data.js"></script>
+<script>
+(function(){
+"use strict";
+/* ============ 工具 ============ */
+function esc(s){return (s==null?"":String(s)).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;")}
+function escM(s){return esc(s).replace(/\n/g,"<br>")}
+function reg(s){return String(s==null?"":s).replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}
+function fmtUSD(v){if(v==null||v===""||isNaN(v))return null;return "$"+Number(v).toLocaleString("en-US")}
+function debounce(fn,ms){var t;return function(){var a=arguments,c=this;clearTimeout(t);t=setTimeout(function(){fn.apply(c,a)},ms)}}
+function tryLS(f){try{return f()}catch(e){return null}}
+var $=function(id){return document.getElementById(id)};
+
+/* ============ 数据就绪检查 ============ */
+function dataOk(){return typeof DATA!=="undefined"&&DATA&&Array.isArray(DATA.strains)}
+
+function showErr(){
+  $("main").innerHTML='<div class="errbox">📡 数据加载失败<br><span style="font-size:12px;color:#64748b">请检查网络后重试</span><br><button onclick="location.reload()">重新加载</button></div>';
+}
+
+/* ============ 状态 ============ */
+var state={
+  tab:"home",
+  strain:{q:"",field:"全部",price:"all"},
+  cust:{q:"",type:"全部"},
+  comp:{q:""},
+  news:{mode:"news",cat:"全部",q:""},
+  lit:{q:""}
+};
+
+/* ============ Tab切换 ============ */
+function switchTab(t){
+  state.tab=t;
+  document.querySelectorAll(".tabbar button").forEach(function(b){b.classList.toggle("on",b.dataset.t===t)});
+  document.querySelectorAll(".page").forEach(function(p){p.classList.toggle("active",p.id==="page-"+t)});
+  window.scrollTo(0,0);
+  tryLS(function(){localStorage.setItem("jaxm_tab",t)});
+}
+document.querySelectorAll(".tabbar button").forEach(function(b){
+  b.addEventListener("click",function(){switchTab(b.dataset.t)});
+});
+
+/* ============ 首页 ============ */
+function renderHome(){
+  if(!dataOk())return;
+  var st=DATA.strains.length,cu=DATA.customers||[];
+  var uniq={};cu.forEach(function(r){uniq[r["客户名称"]]=1});
+  var co=(DATA.competitors||[]).length,nw=(DATA.industry_news||[]).length,li=(DATA.literature||[]).length;
+  var last="";
+  (DATA.industry_news||[]).forEach(function(n){if(n.date&&n.date>last)last=n.date});
+  $("updDate").textContent=last?("数据至 "+last):"";
+  $("statGrid").innerHTML=
+    '<div class="stat"><b>'+st+'</b><span>品系</span></div>'+
+    '<div class="stat"><b>'+Object.keys(uniq).length+'</b><span>客户</span></div>'+
+    '<div class="stat"><b>'+cu.length+'</b><span>管线</span></div>'+
+    '<div class="stat"><b>'+co+'</b><span>竞对</span></div>'+
+    '<div class="stat"><b>'+(nw+li)+'</b><span>情报</span></div>';
+  /* 领域快捷入口 */
+  var cnt={},order=[];
+  DATA.strains.forEach(function(s){
+    var f=s.disease_primary||s["相关疾病领域"]||"其它";
+    f=String(f).split(/[\/、,，]/)[0].trim()||"其它";
+    if(!cnt[f]){cnt[f]=0;order.push(f)}
+    cnt[f]++;
+  });
+  order.sort(function(a,b){return cnt[b]-cnt[a]});
+  $("quickDomains").innerHTML=order.slice(0,9).map(function(f){
+    return '<button class="qcard" data-f="'+esc(f)+'">'+esc(f)+' <b>'+cnt[f]+'</b></button>';
+  }).join("");
+  document.querySelectorAll("#quickDomains .qcard").forEach(function(b){
+    b.addEventListener("click",function(){
+      state.strain.field=b.dataset.f;state.strain.q="";
+      $("strainSearch").value="";buildStrainChips();renderStrains();switchTab("strains");
+    });
+  });
+  /* 最新动态预览 */
+  var ns=(DATA.industry_news||[]).slice(0,5);
+  $("homeNews").innerHTML=ns.map(newsCard).join("")||'<div class="hint">暂无动态</div>';
+  bindNewsCards($("homeNews"));
+}
+
+/* ============ 品系 ============ */
+var STRAIN_FIELDS=["全部","神经","研究工具","自免&免疫","通用","肿瘤","代谢","心血管","血液","其它"];
+function normField(f){
+  f=String(f||"").split(/[\/、,，]/)[0].trim();
+  if(!f)return"其它";
+  for(var i=0;i<STRAIN_FIELDS.length;i++){if(f===STRAIN_FIELDS[i])return f}
+  if(/研究工具|工具/.test(f))return"研究工具";
+  if(/自免|免疫/.test(f))return"自免&免疫";
+  if(/通用|背景/.test(f))return"通用";
+  return"其它";
+}
+function buildStrainChips(){
+  var html=STRAIN_FIELDS.map(function(f){
+    return '<button class="chip'+(state.strain.field===f?" on":"")+'" data-f="'+esc(f)+'">'+esc(f)+"</button>";
+  }).join("")+'<button class="chip'+(state.strain.price==="paid"?" on":"")+'" data-p="paid">💰 有价</button>';
+  $("strainChips").innerHTML=html;
+  document.querySelectorAll("#strainChips .chip").forEach(function(c){
+    c.addEventListener("click",function(){
+      if(c.dataset.f){state.strain.field=c.dataset.f}
+      else{state.strain.price=state.strain.price==="paid"?"all":"paid"}
+      buildStrainChips();renderStrains();
+    });
+  });
+}
+function strainHit(s,q){
+  if(!q)return true;
+  var blob=[s["编号"],s["品系名称"],s["通用名"],s.strain_full_name,s["相关疾病领域"],
+    s.disease_primary,s.disease_secondary,s["主要应用场景"],s["特色/特点/优势"],
+    s.genotype,s.mechanism,s.fab_feature,s["关键文献"]].join(" ");
+  return blob.toLowerCase().indexOf(q.toLowerCase())>-1;
+}
+function renderStrains(){
+  if(!dataOk())return;
+  var q=state.strain.q,f=state.strain.field,onlyPaid=state.strain.price==="paid";
+  var list=DATA.strains.filter(function(s){
+    if(f!=="全部"&&normField(s.disease_primary||s["相关疾病领域"])!==f)return false;
+    if(onlyPaid&&!(s.price_intl_4wk_male!=null))return false;
+    return strainHit(s,q);
+  });
+  $("strainCount").textContent="共 "+list.length+" 个品系";
+  $("strainList").innerHTML=list.map(function(s,i){
+    var intl=fmtUSD(s.price_intl_4wk_male);
+    var priceTag=intl?'<span class="price">'+intl+'</span>':'<span class="price ask">询价</span>';
+    var tags='<span class="tag">'+esc(normField(s.disease_primary||s["相关疾病领域"]))+"</span>";
+    if(s.is_mmrrc)tags+='<span class="tag p">MMRRC</span>';
+    if(s["相关疾病领域"]&&String(s["相关疾病领域"]).indexOf("/")>-1)
+      tags+='<span class="tag n">'+esc(String(s["相关疾病领域"]).split("/").slice(1).join("/").slice(0,14))+"</span>";
+    return '<div class="card" data-i="'+DATA.strains.indexOf(s)+'">'+
+      '<div class="r1"><span class="no">'+esc(s["编号"])+"</span>"+
+      '<span class="name">'+esc(s["品系名称"])+(s["通用名"]?'<span style="font-weight:400;color:var(--muted);font-size:12px"> ('+esc(s["通用名"])+")</span>":"")+"</span>"+
+      priceTag+"</div>"+
+      '<div class="desc">'+esc(s["主要应用场景"]||s.fab_feature||"")+"</div>"+
+      '<div class="meta">'+tags+"</div></div>";
+  }).join("")||'<div class="hint">没有匹配的品系，试试其他关键词</div>';
+  document.querySelectorAll("#strainList .card").forEach(function(c){
+    c.addEventListener("click",function(){openStrain(+c.dataset.i)});
+  });
+}
+
+/* ============ 品系详情 ============ */
+function openStrain(i){
+  var s=DATA.strains[i];if(!s)return;
+  var intl=fmtUSD(s.price_intl_4wk_male),dom=fmtUSD(s.price_dom_4wk_male);
+  var h='<h3>'+esc(s["品系名称"]||"-")+'</h3>';
+  h+='<div class="meta" style="margin:2px 0 8px"><span class="tag n">编号 '+esc(s["编号"])+"</span>"+
+    '<span class="tag">'+esc(normField(s.disease_primary||s["相关疾病领域"]))+"</span>"+
+    (s.is_mmrrc?'<span class="tag p">MMRRC '+esc(s.mmrrc_id||"")+"</span>":"")+
+    (s["通用名"]?'<span class="tag n">通用名 '+esc(s["通用名"])+"</span>":"")+"</div>";
+  if(s.strain_full_name)h+='<div class="kv"><b>全名</b><span>'+esc(s.strain_full_name)+"</span></div>";
+  /* 六维卖点 */
+  var pitch=[["是什么",s.pitch_what],["定位",s.pitch_position],["核心优势",s.pitch_adv],
+    ["独特性",s.pitch_exclusive],["证据",s.pitch_evidence],["适配客户",s.pitch_fit]];
+  var pitchHtml=pitch.filter(function(p){return p[1]}).map(function(p){
+    return '<div class="pitchbox"><div class="plbl">'+p[0]+'</div><p>'+escM(p[1])+"</p></div>";
+  }).join("");
+  if(pitchHtml)h+="<h4>BD 卖点</h4>"+pitchHtml;
+  if(s.fab_feature)h+="<h4>特色 · 优势 · 获益</h4>"+
+    '<p><b style="color:var(--acfg)">特点：</b>'+escM(s.fab_feature)+"</p>"+
+    (s.fab_advantage?'<p><b style="color:var(--acfg)">优势：</b>'+escM(s.fab_advantage)+"</p>":"")+
+    (s.fab_benefit?'<p><b style="color:var(--acfg)">获益：</b>'+escM(s.fab_benefit)+"</p>":"");
+  if(s.mechanism)h+="<h4>机制</h4><p>"+escM(s.mechanism)+"</p>";
+  if(s.genotype)h+="<h4>基因型</h4><p style=\"font-family:var(--mono);font-size:12.5px\">"+escM(s.genotype)+"</p>";
+  /* 价格 */
+  var pg=s.price_by_genotype||[];
+  if(intl||dom||pg.length){
+    h+="<h4>价格</h4>";
+    if(intl||dom)h+='<div class="kv"><b>4周龄雄鼠</b><span>'+(intl?("国际 "+intl):"")+(intl&&dom?" · ":"")+(dom?("国内 "+dom):"")+"</span></div>";
+    if(s.price_genotype_updated)h+='<div class="kv"><b>定价更新</b><span>'+esc(s.price_genotype_updated)+"</span></div>";
+    if(pg.length)h+='<table class="ptable"><tr><th>基因型</th><th>说明</th><th>价格</th></tr>'+
+      pg.map(function(g){
+        var p=fmtUSD(g.price_usd);if(p==null)p=esc(g.price_usd==null?"—":String(g.price_usd));
+        return "<tr><td class='num'>"+esc(g.genotype_id||"—")+"</td><td>"+esc(g.genotype_desc||"")+"</td><td class='num'>"+p+"</td></tr>";
+      }).join("")+"</table>";
+  }else{
+    h+='<div class="tag o" style="display:inline-block;margin-top:8px">价格请询价</div>';
+  }
+  if(s.license_note)h+="<h4>许可条款</h4><p>"+escM(s.license_note)+"</p>";
+  if(s["关键文献"])h+="<h4>关键文献</h4><p>"+escM(s["关键文献"])+"</p>";
+  if(s["主要应用场景"])h+="<h4>应用场景</h4><p>"+escM(s["主要应用场景"])+"</p>";
+  if(s["相关疾病领域"])h+='<div class="kv"><b>疾病领域</b><span>'+esc(s["相关疾病领域"])+"</span></div>";
+  if(s.source_url)h+='<a class="extlink" href="'+esc(s.source_url)+'" target="_blank" rel="noopener noreferrer">JAX 官网页面 ↗</a>';
+  openSheet(h);
+}
+
+/* ============ 客户 ============ */
+function buildCustChips(){
+  var types=["全部","Biopharma","Biotech","CRO"];
+  $("custChips").innerHTML=types.map(function(t){
+    return '<button class="chip'+(state.cust.type===t?" on":"")+'" data-t="'+esc(t)+'">'+esc(t)+"</button>";
+  }).join("");
+  document.querySelectorAll("#custChips .chip").forEach(function(c){
+    c.addEventListener("click",function(){state.cust.type=c.dataset.t;buildCustChips();renderCusts()});
+  });
+}
+function custRows(name){
+  return (DATA.customers||[]).filter(function(r){return r["客户名称"]===name});
+}
+function renderCusts(){
+  if(!dataOk())return;
+  var q=state.cust.q,t=state.cust.type;
+  var seg={};(DATA.customer_segments||[]).forEach(function(s){seg[s["客户名称"]]=s});
+  var uniq=[];(DATA.customers||[]).forEach(function(r){
+    if(uniq.indexOf(r["客户名称"])<0)uniq.push(r["客户名称"]);
+  });
+  var groups=uniq.filter(function(name){
+    var rows=custRows(name);
+    if(t!=="全部"){
+      var sub=(rows[0]["客户子类"]||"");
+      if(t==="CRO"){if(!/CRO|CXO/i.test(sub)&&!/(CRO|医药科技|生物)/i.test(name))return false}
+      else if(sub.indexOf(t)<0)return false;
+    }
+    if(!q)return true;
+    var blob=rows.map(function(r){
+      return [r["客户名称"],r["客户子类"],r["客户规模"],r["药物名称"],r["疾病领域"],r["靶点"],
+        r["技术平台/药物类别"],r["推荐JAX品系"],r["切入机会/市场潜力"],r["近期BD交易"],r["适应症"]].join(" ");
+    }).join(" ");
+    return blob.toLowerCase().indexOf(q.toLowerCase())>-1;
+  });
+  $("custCount").textContent="共 "+groups.length+" 家客户 · "+groups.reduce(function(a,n){return a+custRows(n).length},0)+" 条管线";
+  $("custList").innerHTML=groups.map(function(name){
+    var rows=custRows(name),r0=rows[0],sg=seg[name]||{};
+    var sub=r0["客户子类"]||"";
+    var pot=sg["潜力分级"]||"";
+    var potTag=pot?(/高/.test(pot)?'<span class="tag r">潜力 '+esc(pot)+"</span>":/中/.test(pot)?'<span class="tag o">潜力 '+esc(pot)+"</span>":'<span class="tag n">潜力 '+esc(pot)+"</span>"):"";
+    return '<div class="card" data-c="'+esc(name)+'">'+
+      '<div class="r1"><span class="name">'+esc(name)+"</span>"+potTag+"</div>"+
+      '<div class="meta"><span class="tag">'+esc(sub)+"</span>"+
+      (r0["客户规模"]?'<span class="tag n">'+esc(r0["客户规模"])+"</span>":"")+
+      '<span class="tag g">'+rows.length+" 条管线</span></div></div>";
+  }).join("")||'<div class="hint">没有匹配的客户</div>';
+  document.querySelectorAll("#custList .card").forEach(function(c){
+    c.addEventListener("click",function(){openCust(c.dataset.c)});
+  });
+}
+function openCust(name){
+  var rows=custRows(name);if(!rows.length)return;
+  var r0=rows[0];
+  var sg=null;(DATA.customer_segments||[]).forEach(function(s){if(s["客户名称"]===name)sg=s});
+  var h='<h3>'+esc(name)+'</h3>';
+  h+='<div class="meta" style="margin:2px 0 8px"><span class="tag">'+esc(r0["客户子类"]||"—")+"</span>"+
+    (r0["客户规模"]?'<span class="tag n">'+esc(r0["客户规模"])+"</span>":"")+
+    (sg&&sg["潜力分级"]?'<span class="tag r">潜力 '+esc(sg["潜力分级"])+"</span>":"")+"</div>";
+  if(r0["营收/经费"])h+='<div class="kv"><b>营收/经费</b><span>'+esc(r0["营收/经费"])+"</span></div>";
+  if(r0["近期融资"])h+='<div class="kv"><b>近期融资</b><span>'+esc(r0["近期融资"])+"</span></div>";
+  if(r0["近期BD交易"])h+='<div class="kv"><b>近期BD</b><span>'+esc(r0["近期BD交易"])+"</span></div>";
+  if(r0["是否有动物房"])h+='<div class="kv"><b>动物房</b><span>'+esc(r0["是否有动物房"])+(r0["动物房所在site"]?" · "+esc(r0["动物房所在site"]):"")+"</span></div>";
+  if(sg&&sg["分级依据"])h+="<h4>潜力分级依据</h4><p>"+esc(sg["分级依据"])+"</p>";
+  h+="<h4>管线明细（"+rows.length+"）</h4>";
+  h+=rows.map(function(r){
+    var x='<div class="pitchbox">';
+    x+='<p style="font-weight:600">'+esc(r["药物名称"]||"—")+(r["临床阶段"]?' <span class="tag g" style="margin-left:4px">'+esc(r["临床阶段"])+"</span>":"")+"</p>";
+    if(r["靶点"])x+='<p style="font-size:12.5px"><b style="color:var(--acfg)">靶点：</b>'+esc(r["靶点"])+"</p>";
+    if(r["疾病领域"])x+='<p style="font-size:12.5px"><b style="color:var(--acfg)">领域：</b>'+esc(r["疾病领域"])+"</p>";
+    if(r["技术平台/药物类别"])x+='<p style="font-size:12.5px"><b style="color:var(--acfg)">平台：</b>'+esc(r["技术平台/药物类别"])+"</p>";
+    if(r["适应症"])x+='<p style="font-size:12.5px"><b style="color:var(--acfg)">适应症：</b>'+esc(r["适应症"])+"</p>";
+    if(r["推荐JAX品系"])x+='<div class="pitchbox" style="background:var(--acbg);border-color:#bfdbfe;margin:6px 0 2px"><div class="plbl">推荐 JAX 品系</div><p>'+esc(r["推荐JAX品系"])+"</p></div>";
+    if(r["切入机会/市场潜力"])x+='<p style="font-size:12.5px;margin-top:4px"><b style="color:var(--acfg)">切入机会：</b>'+esc(r["切入机会/市场潜力"])+"</p>";
+    if(r["备注"])x+='<p style="font-size:12px;color:var(--muted);margin-top:4px">'+esc(r["备注"])+"</p>";
+    if(r["管线信息来源"])x+='<p style="font-size:11px;color:var(--muted);margin-top:3px">来源：'+esc(r["管线信息来源"])+"</p>";
+    return x+"</div>";
+  }).join("");
+  if(r0["官方链接url"])h+='<a class="rawbtn" href="'+esc(r0["官方链接url"])+'" target="_blank" rel="noopener noreferrer">查看官方来源 ↗</a>';
+  openSheet(h);
+}
+
+/* ============ 竞对 ============ */
+function renderComps(){
+  if(!dataOk())return;
+  var q=state.comp.q;
+  var list=(DATA.competitors||[]).filter(function(c){
+    if(!q)return true;
+    var dyn=(c["近期动态"]||[]).map(function(d){return d.text||""}).join(" ");
+    return [c["竞对企业"],c["公司英文名"],c["类型"],c["与JAX重叠的核心品系"],c["竞对核心优势"],c["竞对核心劣势"],dyn].join(" ").toLowerCase().indexOf(q.toLowerCase())>-1;
+  });
+  $("compCount").textContent="共 "+list.length+" 家竞对企业";
+  $("compList").innerHTML=list.map(function(c){
+    var alt=c["替代性强弱"]||"";
+    var altTag=/强/.test(alt)?'<span class="tag r">'+esc(alt)+"</span>":/中/.test(alt)?'<span class="tag o">'+esc(alt)+"</span>":alt?'<span class="tag n">'+esc(alt)+"</span>":"";
+    var n=(c["近期动态"]||[]).length;
+    return '<div class="card" data-i="'+(DATA.competitors||[]).indexOf(c)+'">'+
+      '<div class="r1"><span class="name">'+esc(c["竞对企业"])+(c["公司英文名"]?'<span style="font-weight:400;color:var(--muted);font-size:11.5px"> '+esc(c["公司英文名"])+"</span>":"")+"</span>"+altTag+"</div>"+
+      '<div class="desc">'+esc((c["与JAX重叠的核心品系"]||"").slice(0,90))+"</div>"+
+      '<div class="meta"><span class="tag n">'+esc(c["类型"]||"")+"</span>"+(n?'<span class="tag g">'+n+" 条近期动态</span>":"")+"</div></div>";
+  }).join("")||'<div class="hint">没有匹配的竞对</div>';
+  document.querySelectorAll("#compList .card").forEach(function(c){
+    c.addEventListener("click",function(){openComp(+c.dataset.i)});
+  });
+}
+function openComp(i){
+  var c=(DATA.competitors||[])[i];if(!c)return;
+  var h='<h3>'+esc(c["竞对企业"]||"-")+'</h3>';
+  h+='<div class="meta" style="margin:2px 0 8px"><span class="tag n">'+esc(c["类型"]||"—")+"</span>"+
+    (c["替代性强弱"]?'<span class="tag o">替代性 '+esc(c["替代性强弱"])+"</span>":"")+"</div>";
+  if(c["与JAX重叠的核心品系"])h+='<div class="kv"><b>重叠品系</b><span>'+esc(c["与JAX重叠的核心品系"])+"</span></div>";
+  if(c["竞对核心优势"])h+="<h4>核心优势</h4><p>"+escM(c["竞对核心优势"])+"</p>";
+  if(c["竞对核心劣势"])h+="<h4>核心劣势</h4><p>"+escM(c["竞对核心劣势"])+"</p>";
+  var dyn=c["近期动态"]||[];
+  if(dyn.length){
+    h+="<h4>近期动态（"+dyn.length+"）</h4>";
+    h+=dyn.map(function(d){
+      var t=escM(d.text||"");
+      if(d.url)t='<a href="'+esc(d.url)+'" target="_blank" rel="noopener noreferrer" style="color:inherit">'+t+" ↗</a>";
+      return '<div class="pitchbox"><p style="font-size:12.5px">'+t+"</p></div>";
+    }).join("");
+  }
+  openSheet(h);
+}
+
+/* ============ 动态 / 文献 ============ */
+var NEWS_CATS=["全部","研究","商业","合作","融资","实验动物","科研机构"];
+function buildNewsChips(){
+  $("newsChips").innerHTML=NEWS_CATS.map(function(c){
+    return '<button class="chip'+(state.news.cat===c?" on":"")+'" data-c="'+esc(c)+'">'+esc(c)+"</button>";
+  }).join("");
+  document.querySelectorAll("#newsChips .chip").forEach(function(c){
+    c.addEventListener("click",function(){state.news.cat=c.dataset.c;buildNewsChips();renderNews()});
+  });
+}
+function newsCard(n){
+  var cat=n.category||"";
+  return '<div class="card" data-url="'+esc(n.url||"")+'">'+
+    '<div class="r1"><span class="name" style="font-size:13.5px">'+esc(n.title||"")+"</span></div>"+
+    (n.description?'<div class="desc">'+esc(String(n.description).slice(0,110))+"</div>":"")+
+    '<div class="meta"><span class="tag">'+esc(cat)+"</span>"+
+    (n.date?'<span class="tag n">'+esc(n.date)+"</span>":"")+
+    (n.source?'<span class="tag n">'+esc(String(n.source).slice(0,12))+"</span>":"")+"</div></div>";
+}
+function bindNewsCards(root){
+  root.querySelectorAll(".card").forEach(function(c){
+    c.addEventListener("click",function(){
+      var u=c.dataset.url;
+      if(u&&/^https?:/i.test(u))window.open(u,"_blank","noopener");
+    });
+  });
+}
+function renderNews(){
+  if(!dataOk())return;
+  var q=state.news.q,cat=state.news.cat;
+  var list=(DATA.industry_news||[]).filter(function(n){
+    if(cat!=="全部"&&n.category!==cat)return false;
+    if(!q)return true;
+    return [n.title,n.description,n.source,n.category].join(" ").toLowerCase().indexOf(q.toLowerCase())>-1;
+  });
+  $("newsCount").textContent="共 "+list.length+" 条动态";
+  var html="",lastD="";
+  list.forEach(function(n){
+    if(n.date&&n.date!==lastD){lastD=n.date;html+='<div class="news-date">'+esc(lastD)+"</div>"}
+    html+=newsCard(n);
+  });
+  $("newsList").innerHTML=html||'<div class="hint">没有匹配的动态</div>';
+  bindNewsCards($("newsList"));
+}
+function renderLit(){
+  if(!dataOk())return;
+  var q=state.lit.q;
+  var list=(DATA.literature||[]).filter(function(l){
+    if(!q)return true;
+    return [l["文章标题"],l["期刊"],l["JAX品系"],l["JAX品系编号"],l["疾病领域"],l["疾病名称"],l["核心发现"]].join(" ").toLowerCase().indexOf(q.toLowerCase())>-1;
+  });
+  $("litCount").textContent="共 "+list.length+" 篇文献";
+  $("litList").innerHTML=list.map(function(l){
+    return '<div class="card" data-i="'+(DATA.literature||[]).indexOf(l)+'">'+
+      '<div class="r1"><span class="name" style="font-size:13.5px">'+esc(l["文章标题"]||"")+"</span></div>"+
+      '<div class="meta"><span class="tag n">'+esc(l["期刊"]||"")+"</span>"+
+      (l["IF"]?'<span class="tag o">IF '+esc(l["IF"])+"</span>":"")+
+      (l["JAX品系编号"]?'<span class="tag">'+esc(l["JAX品系编号"])+"</span>":"")+
+      (l["发表时间"]?'<span class="tag n">'+esc(l["发表时间"])+"</span>":"")+"</div></div>";
+  }).join("")||'<div class="hint">没有匹配的文献</div>';
+  document.querySelectorAll("#litList .card").forEach(function(c){
+    c.addEventListener("click",function(){openLit(+c.dataset.i)});
+  });
+}
+function openLit(i){
+  var l=(DATA.literature||[])[i];if(!l)return;
+  var h='<h3>'+esc(l["文章标题"]||"-")+'</h3>';
+  h+='<div class="meta" style="margin:2px 0 8px"><span class="tag n">'+esc(l["期刊"]||"—")+"</span>"+
+    (l["IF"]?'<span class="tag o">IF '+esc(l["IF"])+"</span>":"")+
+    (l["发表时间"]?'<span class="tag n">'+esc(l["发表时间"])+"</span>":"")+"</div>";
+  if(l["JAX品系"])h+='<div class="kv"><b>JAX品系</b><span>'+esc(l["JAX品系"])+(l["JAX品系编号"]?"（"+esc(l["JAX品系编号"])+"）":"")+"</span></div>";
+  if(l["疾病领域"])h+='<div class="kv"><b>领域</b><span>'+esc(l["疾病领域"])+(l["疾病名称"]?" · "+esc(l["疾病名称"]):"")+"</span></div>";
+  if(l["研究目的"])h+="<h4>研究目的</h4><p>"+escM(l["研究目的"])+"</p>";
+  if(l["核心发现"])h+="<h4>核心发现</h4><p>"+escM(l["核心发现"])+"</p>";
+  if(l["JAX贡献"])h+="<h4>JAX 贡献</h4><p>"+escM(l["JAX贡献"])+"</p>";
+  if(l["科学价值"])h+='<div class="kv"><b>科学价值</b><span>'+esc(l["科学价值"])+"</span></div>";
+  if(l["文献链接"])h+='<a class="rawbtn" href="'+esc(l["文献链接"])+'" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a>';
+  openSheet(h);
+}
+
+/* ============ 抽屉 ============ */
+var lastFocus=null;
+function openSheet(html){
+  $("sheetBody").innerHTML=html;
+  $("sheet").classList.add("open");$("mask").classList.add("open");
+  document.body.style.overflow="hidden";
+  lastFocus=document.activeElement;
+  $("sheetClose").focus();
+}
+function closeSheet(){
+  $("sheet").classList.remove("open");$("mask").classList.remove("open");
+  document.body.style.overflow="";
+  if(lastFocus&&lastFocus.focus)lastFocus.focus();
+}
+$("mask").addEventListener("click",closeSheet);
+$("sheetClose").addEventListener("click",closeSheet);
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeSheet()});
+
+/* ============ 绑定 ============ */
+function bind(){
+  $("strainSearch").addEventListener("input",debounce(function(e){state.strain.q=e.target.value.trim();renderStrains()},160));
+  $("custSearch").addEventListener("input",debounce(function(e){state.cust.q=e.target.value.trim();renderCusts()},160));
+  $("compSearch").addEventListener("input",debounce(function(e){state.comp.q=e.target.value.trim();renderComps()},160));
+  $("newsSearch").addEventListener("input",debounce(function(e){state.news.q=e.target.value.trim();renderNews()},160));
+  $("litSearch").addEventListener("input",debounce(function(e){state.lit.q=e.target.value.trim();renderLit()},160));
+  $("homeSearch").addEventListener("keydown",function(e){
+    if(e.key==="Enter"){
+      state.strain.q=e.target.value.trim();$("strainSearch").value=state.strain.q;
+      renderStrains();switchTab("strains");e.target.blur();
+    }
+  });
+  document.querySelectorAll("#newsMode .chip").forEach(function(c){
+    c.addEventListener("click",function(){
+      state.news.mode=c.dataset.m;
+      document.querySelectorAll("#newsMode .chip").forEach(function(x){x.classList.toggle("on",x===c)});
+      $("newsPane").style.display=state.news.mode==="news"?"":"none";
+      $("litPane").style.display=state.news.mode==="lit"?"":"none";
+    });
+  });
+}
+
+/* ============ 启动 ============ */
+function boot(){
+  if(!dataOk()){showErr();return}
+  bind();
+  buildStrainChips();
+  buildCustChips();
+  buildNewsChips();
+  renderHome();
+  renderStrains();
+  renderCusts();
+  renderComps();
+  renderNews();
+  renderLit();
+  var t=tryLS(function(){return localStorage.getItem("jaxm_tab")});
+  switchTab(t&&["home","strains","custs","comps","news"].indexOf(t)>-1?t:"home");
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot);
+else boot();
+})();
+</script>
+</body>
+</html>
