@@ -255,8 +255,18 @@ main{padding:12px 12px 8px;max-width:640px;margin:0 auto}
 
 <script src="dashboard_data.js"></script>
 <script>
+/* 数据引用归一：兼容历史 const DATA 与新版 const dashboardData 两种日更输出格式 */
+(function(){
+  var ref=null;
+  try{ if(typeof DATA!=="undefined"&&DATA&&Array.isArray(DATA.strains))ref=DATA }catch(e){}
+  try{ if(!ref&&typeof dashboardData!=="undefined"&&dashboardData&&Array.isArray(dashboardData.strains))ref=dashboardData }catch(e){}
+  try{ window.__jaxData=ref }catch(e){}
+})();
+</script>
+<script>
 (function(){
 "use strict";
+var DATA=window.__jaxData||null;
 /* ============ 工具 ============ */
 function esc(s){return (s==null?"":String(s)).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;")}
 function escM(s){return esc(s).replace(/\n/g,"<br>")}
