@@ -1,4 +1,4 @@
-// 仪表盘数据 - 自动生成于 2026-09-28 09:48:18
+// 仪表盘数据 - 自动生成于 2026-09-28 14:20:30
 const dashboardData = {
   "products": [
     {
@@ -24836,6 +24836,44 @@ const dashboardData = {
           "genotype_id": "N/A",
           "genotype_desc": "N/A",
           "price_usd": 47.59
+        }
+      ]
+    },
+    {
+      "编号": "028288",
+      "品系名称": "B6(Cg)-Ifnar1<tm1.2Ees>/J",
+      "相关疾病领域": "I型干扰素（IFNα/β）信号研究、抗病毒免疫、病毒感染模型、自免与炎症",
+      "主要应用场景": "I型IFN受体缺失纯合品系；抗病毒天然免疫应答与JAK-STAT信号研究；IFN刺激及IFN通路靶向药物评价；寨卡病毒等病毒致病机制研究的IFN敏感对照",
+      "特色/特点/优势": "Ifnar1 tm1.2Ees纯合→I型IFN受体功能缺失，免疫应答下降、病毒易感性升高；纯合可活可育；C57BL/6同源导入背景，易与其他B6免疫品系杂交",
+      "关键文献": "",
+      "其它品牌相关品系": "",
+      "备注": "I型IFN受体单敲，与029098（Ifngr1/Ifnar1双敲）同源；纯合对病毒感染易感；建议SPF级维持，低屏障房间可用药水（sulfatrim或enrofloxacin）保障群体健康；官网状态Limited Availability",
+      "fab_feature": "B6(Cg)同源导入背景；Ifnar1 tm1.2Ees靶向null等位基因（自剪除FRT-Neo盒+loxP，Cre介导切除exon 3，移码致N端11个错义氨基酸后终止）",
+      "fab_advantage": "单一敲除即完全阻断I型IFN受体功能；纯合可存活可育，繁育维护简单",
+      "fab_benefit": "抗病毒免疫、IFN药理与JAK-STAT信号研究的标准单敲对照，可与029098双敲组成完整对照体系",
+      "genotype": "C57BL/6同源导入背景；Ifnar1 tm1.2Ees null纯合（exon 3缺失、exon 2-4剪接移码）；纯合可活可育，杂合无异常",
+      "mechanism": "I型IFNα/β经IFNAR1结合激活JAK-STAT通路；Ifnar1缺失后受体功能丧失，ISG表达与抗病毒免疫应答下降，对病毒感染易感性升高",
+      "disease_primary": "自免&免疫",
+      "disease_secondary": "I型干扰素受体敲除",
+      "strain_full_name": "B6(Cg)-Ifnar1<tm1.2Ees>/J",
+      "source_url": "https://www.jax.org/strain/028288",
+      "pitch_what": "Ifnar1（I型干扰素α/β受体）纯合敲除品系，C57BL/6同源导入背景，抗病毒免疫研究工具鼠",
+      "pitch_position": "病毒易感对照与I型IFN通路因果研究的解释力锚点",
+      "pitch_adv": "单一敲除即消除全部I型IFN应答，纯合可活可育繁育简单，B6同源背景易与其他免疫品系杂交建双敲体系",
+      "pitch_exclusive": "JAX官方Ifnar1 null品系（RRID:IMSR_JAX:028288），tm1.2Ees等位基因的权威来源",
+      "pitch_evidence": "JAX官网明确适用抗病毒免疫应答与JAK-STAT信号研究，寨卡病毒致病机制研究已采用本基因突变模型",
+      "pitch_fit": "抗病毒药物与IFN生物制剂评价、自身免疫IFN签名研究、JAK-STAT通路工具药筛选",
+      "通用名": "Ifnar1 KO",
+      "is_mmrrc": false,
+      "mmrrc_id": "",
+      "license_note": "",
+      "price_intl_4wk_male": 311.34,
+      "price_genotype_updated": "2026-09-28",
+      "price_by_genotype": [
+        {
+          "genotype_id": "HOM",
+          "genotype_desc": "Homozygous for Ifnar1<tm1.2Ees>",
+          "price_usd": 311.34
         }
       ]
     }
