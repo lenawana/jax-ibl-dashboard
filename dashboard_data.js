@@ -1,4 +1,4 @@
-// 仪表盘数据 - 自动生成于 2026-10-09 09:10:30
+// 仪表盘数据 - 自动生成于 2026-10-09 09:15:33
 const dashboardData = {
   "products": [
     {
@@ -25762,6 +25762,49 @@ const dashboardData = {
       "price_intl_4wk_male": null,
       "price_genotype_updated": "2026-10-09",
       "price_by_genotype": []
+    },
+    {
+      "编号": "017933",
+      "品系名称": "B6.Cg-Tg(Prnp-TARDBP*Q331K)103Dwc/J",
+      "相关疾病领域": "肌萎缩侧索硬化（ALS）、FTLD、TDP-43蛋白病",
+      "主要应用场景": "ALS下运动神经元变性与运动功能障碍研究；TDP-43蛋白病机制；运动神经元保护、基因治疗与药物干预评估",
+      "特色/特点/优势": "PrP启动子驱动myc标记人TDP-43（家族性ALS突变Q331K）在脑与脊髓特异表达，神经元与胶质细胞核内聚集并伴内源鼠TDP-43下调；总TDP-43过表达约2.5倍（huTDP-43*Q331K约1.5倍）；loxP侧翼可经Cre删除；UCSD Don Cleveland实验室经典供体",
+      "关键文献": "",
+      "其它品牌相关品系": "",
+      "备注": "3月龄起成年发病：rotarod运动障碍、后肢握力丢失、肌束颤动；10月龄L5运动轴突丢失约30%、下运动神经元丢失30-45%（主下运动神经元表型，与A315T线010700主上运动神经元丢失互补）；低表达配套系017930（line 109）无神经元丢失；2023年QC：活体群ddPCR约4拷贝（3.88-4.36）；背景C57BL/6NJ;C57BL/6NCrl混合",
+      "fab_feature": "PrP(Prnp)启动子驱动myc标记人TDP-43 Q331K cDNA（loxP侧翼），C57BL/6N背景congenic",
+      "fab_advantage": "成年发病渐进性下运动神经元表型明确可重复（L5运动轴突与下运动神经元定向丢失），表达水平量化清晰",
+      "fab_benefit": "与A315T线010700构成上/下运动神经元互补模型对，剂量化过表达便于机制与干预剂量-效应研究",
+      "genotype": "转基因Tg(Prnp-TARDBP*Q331K)103Dwc半合子（Humanized sequence，Transgenic+Cogenic）",
+      "mechanism": "突变型人TDP-43(Q331K)在CNS神经元与胶质细胞核内过表达聚集，内源鼠TDP-43代偿性下调，引发下运动神经元进行性变性",
+      "disease_primary": "神经",
+      "disease_secondary": "肌萎缩侧索硬化（ALS）",
+      "strain_full_name": "B6.Cg-Tg(Prnp-TARDBP*Q331K)103Dwc/J",
+      "source_url": "https://www.jax.org/strain/017933",
+      "pitch_what": "PrP启动子驱动人TDP-43 Q331K（家族性ALS突变）转基因103线（~1.5x），脑与脊髓特异表达",
+      "pitch_position": "ALS下运动神经元变性的经典TDP-43蛋白病模型",
+      "pitch_adv": "成年发病渐进性运动功能障碍伴L5运动轴突与下运动神经元丢失；loxP侧翼可Cre删除；与上运动神经元型A315T线010700互补",
+      "pitch_exclusive": "UCSD Don Cleveland实验室供体、JAX独家保种（RRID:IMSR_JAX:017933），C57BL/6N背景",
+      "pitch_evidence": "官网明确3月龄rotarod运动障碍、10月龄约30% L5轴突与30-45%下运动神经元丢失；2023年ddPCR质控约4拷贝",
+      "pitch_fit": "ALS/FTLD机制研究、TDP-43蛋白病、运动神经元保护与基因治疗干预评估",
+      "通用名": "Prp-TDP43-Q331K",
+      "is_mmrrc": false,
+      "mmrrc_id": "",
+      "license_note": "",
+      "price_intl_4wk_male": 298.01,
+      "price_genotype_updated": "2026-10-09",
+      "price_by_genotype": [
+        {
+          "genotype_id": "HEMI",
+          "genotype_desc": "Hemizygous for Tg(Prnp-TARDBP*Q331K)103Dwc",
+          "price_usd": 298.01
+        },
+        {
+          "genotype_id": "NCAR",
+          "genotype_desc": "Non Carrier for Tg(Prnp-TARDBP*Q331K)103Dwc",
+          "price_usd": 169.0
+        }
+      ]
     }
   ],
   "diseaseRecommendations": [
