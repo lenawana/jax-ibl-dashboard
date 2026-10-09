@@ -1,4 +1,4 @@
-// 仪表盘数据 - 自动生成于 2026-10-09 08:53:15
+// 仪表盘数据 - 自动生成于 2026-10-09 09:02:57
 const dashboardData = {
   "products": [
     {
@@ -25698,6 +25698,38 @@ const dashboardData = {
           "price_usd": 250.74
         }
       ]
+    },
+    {
+      "编号": "002226",
+      "品系名称": "C57BL/6J-Tg(Alb1HBV)44Bri/J",
+      "相关疾病领域": "肝细胞癌（HCC）、乙型肝炎病毒（HBV）慢性感染、细胞凋亡",
+      "主要应用场景": "HBV大包膜蛋白肝细胞持续表达诱导的慢性肝损伤→肝细胞癌发生模型；毛玻璃肝细胞与ER应激研究；抗病毒/保肝干预与肝癌化学预防评估",
+      "特色/特点/优势": "小鼠白蛋白(Alb1)启动子驱动HBV大包膜多肽（L蛋白）在肝细胞特异表达，稳定再现HBV携带状态的肝脏病理；Chisari实验室（The Scripps Research Institute）经典供体品系",
+      "关键文献": "",
+      "其它品牌相关品系": "",
+      "备注": "主文献中称50-4或Tg(Alb1-HBV)Bri44；转基因插入44（Ralph L. Brinster）；官网状态Cryorecovery（复苏中无现货，价格N/A）；研究领域：细胞凋亡、肿瘤、病毒学",
+      "fab_feature": "C57BL/6J背景转基因鼠：HBV大包膜多肽编码序列置于小鼠白蛋白(Alb1)启动子下游，肝细胞特异表达",
+      "fab_advantage": "无需活病毒感染与BSL操作即可获得持续的HBV肝损伤-再生循环，肝细胞特异表达经遗传稳定传递",
+      "fab_benefit": "为HBV相关肝癌机制研究与干预评估提供表型稳定、批次一致的经典动物模型，聚焦肝细胞癌变进程",
+      "genotype": "转基因Tg(Alb1HBV)44Bri（插入表达序列，Transgenic），C57BL/6J近交背景",
+      "mechanism": "白蛋白启动子在肝细胞驱动HBV大包膜多肽（large envelope polypeptide）持续表达，蛋白蓄积形成毛玻璃肝细胞并引发ER应激与凋亡",
+      "disease_primary": "肿瘤",
+      "disease_secondary": "肝癌/HBV相关",
+      "strain_full_name": "C57BL/6J-Tg(Alb1HBV)44Bri/J",
+      "source_url": "https://www.jax.org/strain/002226",
+      "pitch_what": "HBV大包膜蛋白转基因模型（Alb-PSX 50-4），白蛋白启动子驱动肝细胞特异表达",
+      "pitch_position": "HBV慢性感染相关肝细胞癌研究的经典转基因模型",
+      "pitch_adv": "无需活病毒感染即可再现慢性HBV肝损伤→HCC进程；肝细胞特异表达遗传稳定，表型均一",
+      "pitch_exclusive": "Scripps Chisari实验室供体、JAX独家保种（RRID:IMSR_JAX:002226），Cryorecovery恢复供应",
+      "pitch_evidence": "官网明确该品系适用于肝细胞癌研究；主文献以50-4/Tg(Alb1-HBV)Bri44命名开展系列致癌机制研究",
+      "pitch_fit": "HBV相关HCC发生机制、抗病毒与化学预防干预评估、ER应激与凋亡信号研究",
+      "通用名": "HBV大包膜蛋白转基因鼠（Alb-PSX 50-4）",
+      "is_mmrrc": false,
+      "mmrrc_id": "",
+      "license_note": "",
+      "price_intl_4wk_male": null,
+      "price_genotype_updated": "2026-10-09",
+      "price_by_genotype": []
     }
   ],
   "diseaseRecommendations": [
