@@ -1,4 +1,4 @@
-// 仪表盘数据 - 自动生成于 2026-10-09 09:02:57
+// 仪表盘数据 - 自动生成于 2026-10-09 09:10:30
 const dashboardData = {
   "products": [
     {
@@ -25724,6 +25724,38 @@ const dashboardData = {
       "pitch_evidence": "官网明确该品系适用于肝细胞癌研究；主文献以50-4/Tg(Alb1-HBV)Bri44命名开展系列致癌机制研究",
       "pitch_fit": "HBV相关HCC发生机制、抗病毒与化学预防干预评估、ER应激与凋亡信号研究",
       "通用名": "HBV大包膜蛋白转基因鼠（Alb-PSX 50-4）",
+      "is_mmrrc": false,
+      "mmrrc_id": "",
+      "license_note": "",
+      "price_intl_4wk_male": null,
+      "price_genotype_updated": "2026-10-09",
+      "price_by_genotype": []
+    },
+    {
+      "编号": "006475",
+      "品系名称": "B6.FVB(129S4)-Tg(Ckmm-cre)5Khn/J",
+      "相关疾病领域": "研究工具（肌肉特异条件性基因编辑）",
+      "主要应用场景": "与loxP条件性品系杂交实现骨骼肌与心肌特异基因敲除/激活；肌肉代谢（胰岛素信号）、心肌病、肌少症与肌肉萎缩等研究的条件性工具",
+      "特色/特点/优势": "肌肉肌酸激酶(MCK/Ckm)启动子+增强子驱动Cre在骨骼肌与心肌稳定表达；半合子健康可育无异常，JAX群体纯合亦可活可育；Joslin糖尿病中心C. Ronald Kahn实验室经典供体",
+      "关键文献": "",
+      "其它品牌相关品系": "",
+      "备注": "转基因插入5（C Ronald Kahn）；6.5kb Ckmm基因组片段（含启动子、增强子1、内含子1增强子2区及外显子2前16bp）驱动带SV40大T抗原NLS的改良Cre；C57BL/6回交10代背景，SNP panel提示C57BL/6J与6N亚系位点存在分离；官网状态Cryorecovery（无现货，价格N/A）",
+      "fab_feature": "Ckm(MCK)基因组调控元件驱动的Cre转基因，重组酶表达定向于骨骼肌与心肌",
+      "fab_advantage": "肌肉双组织（骨骼肌+心肌）重组活性稳定，半合子与纯合均可育，繁育窗口宽",
+      "fab_benefit": "与JAX海量loxP条件性等位基因即插即用，肌肉特异敲除无需全身敲除的致死负担",
+      "genotype": "转基因Tg(Ckmm-cre)5Khn（Recombinase-expressing，Transgenic），C57BL/6背景congenic",
+      "mechanism": "MCK启动子在骨骼肌与心肌驱动Cre表达，介导loxP位点重组实现肌肉特异基因组编辑",
+      "disease_primary": "研究工具",
+      "disease_secondary": "研究工具",
+      "strain_full_name": "B6.FVB(129S4)-Tg(Ckmm-cre)5Khn/J",
+      "source_url": "https://www.jax.org/strain/006475",
+      "pitch_what": "MCK-Cre肌肉特异Cre工具鼠，肌酸激酶(Ckm)启动子驱动骨骼肌与心肌表达",
+      "pitch_position": "肌肉条件性基因编辑的标准Cre driver",
+      "pitch_adv": "骨骼肌+心肌双组织覆盖；半合子健康可育、纯合亦可活可育，繁育方便",
+      "pitch_exclusive": "Joslin Kahn实验室供体、JAX独家保种（RRID:IMSR_JAX:006475），C57BL/6回交10代背景",
+      "pitch_evidence": "官网明确与loxP侧翼序列品系杂交实现骨骼肌/心肌特异敲除；32 SNP panel确认C57BL/6遗传背景",
+      "pitch_fit": "肌肉代谢（胰岛素受体等）、心肌病、肌少症/肌萎缩相关的条件性敲除研究",
+      "通用名": "MCK-Cre",
       "is_mmrrc": false,
       "mmrrc_id": "",
       "license_note": "",
