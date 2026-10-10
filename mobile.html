@@ -432,6 +432,8 @@ function openStrain(i){
   if(cfA.length)h+="<h4>客户反馈</h4>"+cfA.map(function(x){return '<p>· '+(x.from?"<b>"+escM(x.from)+"</b>：":"")+escM(x.text)+(x.date?' <span style="color:var(--muted)">'+escM(x.date)+"</span>":"")+"</p>"}).join("");
   var rsA=(s.customer_research||[]).filter(function(x){return x&&x.text});
   if(rsA.length)h+="<h4>相关客户研究</h4>"+rsA.map(function(x){var t='<p>· '+(x.from?"<b>"+escM(x.from)+"</b>：":"")+linkM(x.text);if(x.url)t+=' <a href="'+escM(x.url)+'" target="_blank" style="color:var(--brand)">链接↗</a>';return t+"</p>"}).join("");
+  var cmpA=(s.competitor_strains||[]).filter(function(x){return x&&x.name});
+  if(cmpA.length)h+="<h4>竞品对标品系</h4>"+cmpA.map(function(x){var t='<p>· '+(x.company?"<b>"+escM(x.company)+"</b>：":"")+escM(x.name);if(x.url)t+=' <a href="'+escM(x.url)+'" target="_blank" style="color:var(--brand)">链接↗</a>';if(x.note)t+='<span style="color:var(--muted);font-size:11px">　'+escM(x.note)+'</span>';return t+"</p>"}).join("")+'<p style="font-size:11px;color:var(--muted);margin-top:4px">※ 竞品信息整理自各公司官网公开资料，遗传背景与组件以官网为准。</p>';
   /* 价格 */
   var pg=s.price_by_genotype||[];
   if(intl||dom||pg.length){
