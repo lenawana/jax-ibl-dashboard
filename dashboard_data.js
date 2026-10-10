@@ -1,4 +1,4 @@
-// 仪表盘数据 - 自动生成于 2026-10-10 10:03:11
+// 仪表盘数据 - 自动生成于 2026-10-10 10:08:36
 const dashboardData = {
   "products": [
     {
@@ -16290,7 +16290,13 @@ const dashboardData = {
           "price_usd": 474.5
         }
       ],
-      "customer_feedback": [],
+      "customer_feedback": [
+        {
+          "from": "",
+          "text": "自发双突变模型，目前国内没有可以真正意义上可以替代的。",
+          "date": "2026-10-10"
+        }
+      ],
       "customer_research": []
     },
     {
