@@ -1,4 +1,4 @@
-// 仪表盘数据 - 自动生成于 2026-10-10 12:37:00
+// 仪表盘数据 - 自动生成于 2026-10-10 16:09:56
 const dashboardData = {
   "products": [
     {
@@ -11839,7 +11839,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "005557",
@@ -11881,7 +11885,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "100008",
@@ -11923,7 +11931,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "022974",
@@ -11970,7 +11982,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000485",
@@ -12012,7 +12028,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "003535",
@@ -12054,7 +12074,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "025216",
@@ -12096,7 +12120,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "018441",
@@ -12138,7 +12166,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "004424",
@@ -12180,7 +12212,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000651",
@@ -12222,7 +12258,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "036174",
@@ -12258,7 +12298,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "001162",
@@ -12300,7 +12344,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "001803",
@@ -12342,7 +12390,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032487",
@@ -12384,7 +12436,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "014565",
@@ -12426,7 +12482,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "008449",
@@ -12468,7 +12528,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000670",
@@ -12510,7 +12574,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002014",
@@ -12552,7 +12620,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "031675",
@@ -12594,7 +12666,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "001913",
@@ -12636,7 +12712,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "001976",
@@ -12678,7 +12758,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000486",
@@ -12720,7 +12804,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000668",
@@ -12762,7 +12850,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000463",
@@ -12804,7 +12896,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000676",
@@ -12846,7 +12942,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002216",
@@ -12888,7 +12988,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "006584",
@@ -12930,7 +13034,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "013062",
@@ -12972,7 +13080,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002616",
@@ -13008,7 +13120,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "036159",
@@ -13055,7 +13171,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "100012",
@@ -13097,7 +13217,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "012836",
@@ -13144,7 +13268,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "013071",
@@ -13196,7 +13324,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033391",
@@ -13232,7 +13364,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000664",
@@ -13274,7 +13410,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "004154",
@@ -13321,7 +13461,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "005063",
@@ -13357,7 +13501,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "014096",
@@ -13399,7 +13547,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "026179",
@@ -13441,7 +13593,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "008197",
@@ -13488,7 +13644,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000740",
@@ -13530,7 +13690,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "020356",
@@ -13566,7 +13730,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "003641",
@@ -13602,7 +13770,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002020",
@@ -13649,7 +13821,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "001756",
@@ -13685,7 +13861,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "027511",
@@ -13721,7 +13901,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000659",
@@ -13763,7 +13947,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000646",
@@ -13805,7 +13993,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037320",
@@ -13847,7 +14039,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "008730",
@@ -13894,7 +14090,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "004807",
@@ -13936,7 +14136,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "008169",
@@ -13983,7 +14187,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "001026",
@@ -14025,7 +14233,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000671",
@@ -14067,7 +14279,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "013141",
@@ -14103,7 +14319,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029686",
@@ -14145,7 +14365,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "004919",
@@ -14192,7 +14416,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "006554",
@@ -14239,7 +14467,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000642",
@@ -14291,7 +14523,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000928",
@@ -14333,7 +14569,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000686",
@@ -14375,7 +14615,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000654",
@@ -14417,7 +14661,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000658",
@@ -14459,7 +14707,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000656",
@@ -14501,7 +14753,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000691",
@@ -14543,7 +14799,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000465",
@@ -14585,7 +14845,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000457",
@@ -14627,7 +14891,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000684",
@@ -14669,7 +14937,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "001303",
@@ -14711,7 +14983,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000785",
@@ -14747,7 +15023,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "009376",
@@ -14789,7 +15069,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029098",
@@ -14831,7 +15115,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002288",
@@ -14873,7 +15161,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002591",
@@ -14915,7 +15207,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "004762",
@@ -14951,7 +15247,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002726",
@@ -14998,7 +15298,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "004435",
@@ -15045,7 +15349,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "001801",
@@ -15087,7 +15395,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "003716",
@@ -15123,7 +15435,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "034711",
@@ -15165,7 +15481,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033930",
@@ -15207,7 +15527,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "004462",
@@ -15254,7 +15578,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "005864",
@@ -15301,7 +15629,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "024841",
@@ -15348,7 +15680,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030898",
@@ -15390,7 +15726,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038920",
@@ -15432,7 +15772,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "004479",
@@ -15479,7 +15823,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "010799",
@@ -15521,7 +15869,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039166",
@@ -15563,7 +15915,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037870",
@@ -15599,7 +15955,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029928",
@@ -15635,7 +15995,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "035794",
@@ -15677,7 +16041,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "005025",
@@ -15724,7 +16092,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "003092",
@@ -15771,7 +16143,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002282",
@@ -15813,7 +16189,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "003831",
@@ -15855,7 +16235,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "005023",
@@ -15897,7 +16281,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "007914",
@@ -15939,7 +16327,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "007909",
@@ -15981,7 +16373,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "018385",
@@ -16028,7 +16424,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "010505",
@@ -16075,7 +16475,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002232",
@@ -16111,7 +16515,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029218",
@@ -16158,7 +16566,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "004824",
@@ -16210,7 +16622,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "001811",
@@ -16252,7 +16668,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002207",
@@ -16294,7 +16714,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002908",
@@ -16341,7 +16765,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002539",
@@ -16388,7 +16816,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "005558",
@@ -16473,7 +16905,39 @@ const dashboardData = {
           "url": "https://www.spfbiotech.com/product/ratdetail/14/275",
           "note": "NOD-SCID基础上Il2rg敲除"
         }
-      ]
+      ],
+      "references": [
+        {
+          "title": "Spontaneous Posterior Segment Vascular Disease Phenotype of a Mouse Model, rnv3, Is Dependent on the Crb1rd8 Allele.",
+          "year": "2018",
+          "authors": "Chang B; FitzMaurice B; Wang J; Low BE; Wiles MV; Nishina PM",
+          "pmid": "30372741"
+        },
+        {
+          "title": "Spontaneous CNV in a novel mutant mouse is associated with early VEGF-A-driven angiogenesis and late-stage focal edema, neural cell loss, and dysfunction.",
+          "year": "2014",
+          "authors": "Nagai N; Lundh von Leithner P; Izumi-Nagai K; Hosking B; Chang B; Hurd R; Adamson P; Adamis AP; Foxton RH; Ng YS; Shima DT",
+          "pmid": "24845632"
+        },
+        {
+          "title": "Characterization of a spontaneous retinal neovascular mouse model.",
+          "year": "2014",
+          "authors": "Hasegawa E; Sweigard H; Husain D; Olivares AM; Chang B; Smith KE; Birsner AE; D'Amato RJ; Michaud NA; Han Y; Vavvas DG; Miller JW; Haider NB; Connor KM",
+          "pmid": "25188381"
+        }
+      ],
+      "licensing": [
+        {
+          "text": "营利机构使用需在发货前签署免费JAX Leap License（Use of MICE by companies or for-profit entities requires a no-fee JAX Leap License prior to shipping.）",
+          "url": "https://media.jax.org/asset/e081c082-9e80-49c0-b238-a6cb43db6851/FPMLICENSE.pdf"
+        },
+        {
+          "text": "现货供应（Available）：4-12周龄活体小鼠可订，库存随需求波动；批量同龄组需求需与JAX客服确认可行性。",
+          "url": ""
+        }
+      ],
+      "breeding_summary": "Jak3m1J纯合子免疫缺陷，繁育与操作需充分考虑环境控制；双基因纯合子可活可育；标准交配方案 Homozygote × Homozygote（Crb1rd8 与 Jak3m1J 双纯合繁育）；毛色黑色；当前世代 F39p+F2（2026-04）。",
+      "detailed_desc": "Crb1rd8纯合眼表型因叠加Jak3m1J纯合而加重：双纯合子18日龄起出现多灶性视网膜色素脱失斑并逐渐扩大，25日龄出现荧光素渗漏，伴进行性光感受器变性与ERG恶化；8周龄暗/明适应ERG轻度降低，8月龄严重。分子注记：Crb1rd8为编码区3481位单碱基C缺失致移码并截短蛋白（存在于所有C57BL/6N亚系）；Jak3m1J为exon 24 G→A错义突变（R1081Q）。"
     },
     {
       "编号": "026622",
@@ -16515,7 +16979,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "034860",
@@ -16557,7 +17025,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "009355",
@@ -16599,7 +17071,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "701362",
@@ -16635,7 +17111,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "703089",
@@ -16671,7 +17151,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000632",
@@ -16718,7 +17202,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000697",
@@ -16765,7 +17253,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "006921",
@@ -16801,7 +17293,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "014593",
@@ -16843,7 +17339,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "017837",
@@ -16885,7 +17385,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "023099",
@@ -16932,7 +17436,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030888",
@@ -16974,7 +17482,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "034848",
@@ -17010,7 +17522,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037420",
@@ -17052,7 +17568,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038796",
@@ -17099,7 +17619,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "006582",
@@ -17141,7 +17665,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033076",
@@ -17183,7 +17711,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002561",
@@ -17219,7 +17751,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "024761",
@@ -17266,7 +17802,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002646",
@@ -17302,7 +17842,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "009687",
@@ -17338,7 +17882,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "025630",
@@ -17374,7 +17922,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "024857",
@@ -17410,7 +17962,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "003253",
@@ -17446,7 +18002,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038212",
@@ -17488,7 +18048,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000482",
@@ -17530,7 +18094,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "041202",
@@ -17582,7 +18150,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "101043",
@@ -17624,7 +18196,11 @@ const dashboardData = {
       ],
       "customer_feedback": [],
       "customer_research": [],
-      "competitor_strains": []
+      "competitor_strains": [],
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "003303",
@@ -17666,7 +18242,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "010700",
@@ -17713,7 +18293,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030052",
@@ -17760,7 +18344,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "025199",
@@ -17796,7 +18384,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "025201",
@@ -17843,7 +18435,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "025397",
@@ -17890,7 +18486,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "025408",
@@ -17932,7 +18532,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "025520",
@@ -17968,7 +18572,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "025524",
@@ -18010,7 +18618,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "025567",
@@ -18057,7 +18669,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "025614",
@@ -18104,7 +18720,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "025807",
@@ -18151,7 +18771,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "026123",
@@ -18193,7 +18817,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "026175",
@@ -18235,7 +18863,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "026176",
@@ -18287,7 +18919,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "026219",
@@ -18329,7 +18965,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "026220",
@@ -18376,7 +19016,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "026406",
@@ -18412,7 +19056,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "026554",
@@ -18454,7 +19102,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "026801",
@@ -18496,7 +19148,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "026812",
@@ -18538,7 +19194,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "026827",
@@ -18585,7 +19245,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "026925",
@@ -18627,7 +19291,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "026931",
@@ -18669,7 +19337,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "027116",
@@ -18705,7 +19377,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "027230",
@@ -18741,7 +19417,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "027410",
@@ -18777,7 +19457,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "027510",
@@ -18813,7 +19497,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "027576",
@@ -18849,7 +19537,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "027826",
@@ -18891,7 +19583,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "027894",
@@ -18933,7 +19629,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "027958",
@@ -18975,7 +19675,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028021",
@@ -19011,7 +19715,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028062",
@@ -19053,7 +19761,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028071",
@@ -19095,7 +19807,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028196",
@@ -19142,7 +19858,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028197",
@@ -19178,7 +19898,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028239",
@@ -19220,7 +19944,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028376",
@@ -19256,7 +19984,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028392",
@@ -19292,7 +20024,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028532",
@@ -19334,7 +20070,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028538",
@@ -19376,7 +20116,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028657",
@@ -19433,7 +20177,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028840",
@@ -19469,7 +20217,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028842",
@@ -19516,7 +20268,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028862",
@@ -19558,7 +20314,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028865",
@@ -19600,7 +20360,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028866",
@@ -19647,7 +20411,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028867",
@@ -19689,7 +20457,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029017",
@@ -19731,7 +20503,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029018",
@@ -19773,7 +20549,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029099",
@@ -19809,7 +20589,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029275",
@@ -19845,7 +20629,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029316",
@@ -19881,7 +20669,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029349",
@@ -19917,7 +20709,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029567",
@@ -19964,7 +20760,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029627",
@@ -20011,7 +20811,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029690",
@@ -20047,7 +20851,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029802",
@@ -20083,7 +20891,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029803",
@@ -20119,7 +20931,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029899",
@@ -20161,7 +20977,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "029977",
@@ -20203,7 +21023,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030130",
@@ -20239,7 +21063,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030155",
@@ -20275,7 +21103,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030158",
@@ -20311,7 +21143,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030201",
@@ -20353,7 +21189,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030211",
@@ -20395,7 +21235,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030323",
@@ -20437,7 +21281,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030504",
@@ -20484,7 +21332,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030532",
@@ -20526,7 +21378,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030541",
@@ -20568,7 +21424,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030578",
@@ -20604,7 +21464,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030597",
@@ -20651,7 +21515,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030748",
@@ -20687,7 +21555,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030757",
@@ -20729,7 +21601,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030764",
@@ -20771,7 +21647,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030890",
@@ -20818,7 +21698,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030926",
@@ -20854,7 +21738,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "030952",
@@ -20896,7 +21784,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "031286",
@@ -20932,7 +21824,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "031303",
@@ -20979,7 +21875,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "031562",
@@ -21026,7 +21926,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "031661",
@@ -21068,7 +21972,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "031820",
@@ -21110,7 +22018,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "031827",
@@ -21146,7 +22058,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "031829",
@@ -21182,7 +22098,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "031968",
@@ -21224,7 +22144,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032127",
@@ -21266,7 +22190,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032131",
@@ -21302,7 +22230,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032173",
@@ -21344,7 +22276,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032188",
@@ -21391,7 +22327,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032289",
@@ -21438,7 +22378,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032290",
@@ -21480,7 +22424,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032429",
@@ -21527,7 +22475,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032435",
@@ -21574,7 +22526,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032518",
@@ -21626,7 +22582,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032622",
@@ -21662,7 +22622,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032675",
@@ -21704,7 +22668,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032723",
@@ -21740,7 +22708,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032758",
@@ -21776,7 +22748,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032770",
@@ -21823,7 +22799,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032864",
@@ -21865,7 +22845,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "032911",
@@ -21901,7 +22885,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033065",
@@ -21943,7 +22931,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033089",
@@ -21979,7 +22971,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033160",
@@ -22015,7 +23011,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033168",
@@ -22057,7 +23057,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033205",
@@ -22093,7 +23097,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033219",
@@ -22135,7 +23143,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033551",
@@ -22182,7 +23194,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033616",
@@ -22218,7 +23234,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033709",
@@ -22254,7 +23274,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033884",
@@ -22290,7 +23314,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033951",
@@ -22337,7 +23365,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "033999",
@@ -22373,7 +23405,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "034050",
@@ -22409,7 +23445,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "034422",
@@ -22445,7 +23485,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "034424",
@@ -22481,7 +23525,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "034473",
@@ -22517,7 +23565,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "034919",
@@ -22553,7 +23605,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "035092",
@@ -22600,7 +23656,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "035229",
@@ -22642,7 +23702,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "035272",
@@ -22678,7 +23742,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "035273",
@@ -22714,7 +23782,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "035401",
@@ -22756,7 +23828,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "035436",
@@ -22803,7 +23879,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "035610",
@@ -22850,7 +23930,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "035611",
@@ -22897,7 +23981,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "035717",
@@ -22939,7 +24027,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "035831",
@@ -22981,7 +24073,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "036203",
@@ -23023,7 +24119,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "036232",
@@ -23059,7 +24159,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "036294",
@@ -23095,7 +24199,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "036333",
@@ -23131,7 +24239,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "036382",
@@ -23173,7 +24285,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "036662",
@@ -23220,7 +24336,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "036761",
@@ -23262,7 +24382,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "036900",
@@ -23298,7 +24422,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037040",
@@ -23340,7 +24468,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037050",
@@ -23376,7 +24508,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037076",
@@ -23412,7 +24548,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037104",
@@ -23454,7 +24594,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037254",
@@ -23490,7 +24634,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037269",
@@ -23537,7 +24685,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037322",
@@ -23584,7 +24736,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037382",
@@ -23631,7 +24787,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037466",
@@ -23678,7 +24838,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037495",
@@ -23714,7 +24878,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037498",
@@ -23750,7 +24918,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037524",
@@ -23792,7 +24964,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037596",
@@ -23828,7 +25004,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037632",
@@ -23870,7 +25050,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037677",
@@ -23917,7 +25101,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037704",
@@ -23959,7 +25147,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037709",
@@ -24001,7 +25193,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037836",
@@ -24043,7 +25239,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037878",
@@ -24079,7 +25279,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037879",
@@ -24115,7 +25319,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037890",
@@ -24162,7 +25370,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037891",
@@ -24209,7 +25421,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037905",
@@ -24245,7 +25461,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037939",
@@ -24287,7 +25507,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037944",
@@ -24334,7 +25558,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "037952",
@@ -24376,7 +25604,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038118",
@@ -24412,7 +25644,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038165",
@@ -24454,7 +25690,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038197",
@@ -24501,7 +25741,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038221",
@@ -24543,7 +25787,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038452",
@@ -24585,7 +25833,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038534",
@@ -24642,7 +25894,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038538",
@@ -24689,7 +25945,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038572",
@@ -24725,7 +25985,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038709",
@@ -24767,7 +26031,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038729",
@@ -24809,7 +26077,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038749",
@@ -24851,7 +26123,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038750",
@@ -24893,7 +26169,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038813",
@@ -24940,7 +26220,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "038895",
@@ -24976,7 +26260,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039036",
@@ -25012,7 +26300,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039051",
@@ -25048,7 +26340,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039056",
@@ -25095,7 +26391,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039097",
@@ -25142,7 +26442,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039108",
@@ -25199,7 +26503,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039167",
@@ -25241,7 +26549,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039217",
@@ -25288,7 +26600,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039262",
@@ -25330,7 +26646,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039267",
@@ -25372,7 +26692,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039301",
@@ -25408,7 +26732,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039317",
@@ -25450,7 +26778,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039416",
@@ -25486,7 +26818,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039417",
@@ -25522,7 +26858,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039490",
@@ -25558,7 +26898,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039524",
@@ -25594,7 +26938,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039560",
@@ -25646,7 +26994,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039561",
@@ -25693,7 +27045,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039562",
@@ -25735,7 +27091,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039563",
@@ -25787,7 +27147,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039572",
@@ -25823,7 +27187,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039621",
@@ -25859,7 +27227,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039735",
@@ -25895,7 +27267,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039737",
@@ -25931,7 +27307,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039923",
@@ -25973,7 +27353,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "039952",
@@ -26015,7 +27399,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040069",
@@ -26057,7 +27445,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040118",
@@ -26099,7 +27491,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040125",
@@ -26151,7 +27547,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040140",
@@ -26193,7 +27593,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040163",
@@ -26240,7 +27644,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040164",
@@ -26287,7 +27695,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040165",
@@ -26334,7 +27746,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040171",
@@ -26370,7 +27786,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040184",
@@ -26417,7 +27837,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040208",
@@ -26453,7 +27877,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040288",
@@ -26495,7 +27923,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040319",
@@ -26531,7 +27963,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040400",
@@ -26567,7 +28003,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040426",
@@ -26614,7 +28054,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040456",
@@ -26666,7 +28110,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040482",
@@ -26713,7 +28161,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040519",
@@ -26755,7 +28207,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040651",
@@ -26791,7 +28247,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040661",
@@ -26843,7 +28303,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "040780",
@@ -26890,7 +28354,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "041008",
@@ -26926,7 +28394,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "041057",
@@ -26962,7 +28434,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "041095",
@@ -26998,7 +28474,11 @@ const dashboardData = {
       "customer_research": [],
       "competitor_strains": [],
       "price_intl_4wk_male": 0,
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "041107",
@@ -27040,7 +28520,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "100006",
@@ -27082,7 +28566,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "100010",
@@ -27124,7 +28612,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "028288",
@@ -27166,7 +28658,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "000476",
@@ -27208,7 +28704,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "002226",
@@ -27244,7 +28744,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "006475",
@@ -27280,7 +28784,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     },
     {
       "编号": "017933",
@@ -27327,7 +28835,11 @@ const dashboardData = {
       "customer_feedback": [],
       "customer_research": [],
       "competitor_strains": [],
-      "price_dom_4wk_male": 0
+      "price_dom_4wk_male": 0,
+      "references": [],
+      "licensing": [],
+      "breeding_summary": "",
+      "detailed_desc": ""
     }
   ],
   "diseaseRecommendations": [

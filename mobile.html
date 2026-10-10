@@ -426,6 +426,8 @@ function openStrain(i){
     (s.fab_advantage?'<p><b style="color:var(--acfg)">优势：</b>'+escM(s.fab_advantage)+"</p>":"")+
     (s.fab_benefit?'<p><b style="color:var(--acfg)">获益：</b>'+escM(s.fab_benefit)+"</p>":"");
   if(s.mechanism)h+="<h4>机制</h4><p>"+escM(s.mechanism)+"</p>";
+  if(s.detailed_desc)h+="<h4>表型与分子注记</h4><p>"+escM(s.detailed_desc)+"</p>";
+  if(s.breeding_summary)h+="<h4>繁育特征</h4><p>"+escM(s.breeding_summary)+"</p>";
   if(s.genotype)h+="<h4>基因型</h4><p style=\"font-family:var(--mono);font-size:12.5px\">"+escM(s.genotype)+"</p>";
   function linkM(t){var out=escM(t||"");return out.replace(/(^|[^0-9A-Za-z>])(\d{6})(?![0-9])/g,function(m,p,num){var ok=DATA.strains.some(function(x){return x["编号"]===num});if(!ok)return p+num;return p+'<b style="color:var(--brand);cursor:pointer" onclick="jumpStrain('+num+')">'+num+'</b>'})}
   var cfA=(s.customer_feedback||[]).filter(function(x){return x&&x.text});
@@ -448,8 +450,12 @@ function openStrain(i){
   }else{
     h+='<div class="tag o" style="display:inline-block;margin-top:8px">价格请询价</div>';
   }
-  if(s.license_note)h+="<h4>许可条款</h4><p>"+escM(s.license_note)+"</p>";
-  if(s["关键文献"])h+="<h4>关键文献</h4><p>"+escM(s["关键文献"])+"</p>";
+  var licA=(s.licensing||[]).filter(function(x){return x&&x.text});
+  if(licA.length)h+="<h4>许可与采购</h4>"+licA.map(function(x){var t='<p>· '+escM(x.text);if(x.url)t+=' <a href="'+escM(x.url)+'" target="_blank" style="color:var(--brand)">条款↗</a>';return t+"</p>"}).join("");
+  else if(s.license_note)h+="<h4>许可条款</h4><p>"+escM(s.license_note)+"</p>";
+  var refA=(s.references||[]).filter(function(x){return x&&x.title});
+  if(refA.length)h+="<h4>文献参考</h4>"+refA.map(function(x){var t='<p><b>'+escM(x.title)+'</b> <span style="color:var(--muted)">'+escM(x.year||"")+(x.authors?" · "+escM(x.authors.split(";")[0].trim())+" et al.":"")+'</span>';if(x.pmid)t+=' <a href="https://pubmed.ncbi.nlm.nih.gov/'+escM(x.pmid)+'/" target="_blank" style="color:var(--brand)">PubMed↗</a>';return t+"</p>"}).join("");
+  else if(s["关键文献"])h+="<h4>关键文献</h4><p>"+escM(s["关键文献"])+"</p>";
   if(s["主要应用场景"])h+="<h4>应用场景</h4><p>"+escM(s["主要应用场景"])+"</p>";
   if(s["相关疾病领域"])h+='<div class="kv"><b>疾病领域</b><span>'+esc(s["相关疾病领域"])+"</span></div>";
   if(s.source_url)h+='<a class="extlink" href="'+esc(s.source_url)+'" target="_blank" rel="noopener noreferrer">JAX 官网页面 ↗</a>';
