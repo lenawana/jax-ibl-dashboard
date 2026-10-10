@@ -454,7 +454,7 @@ function openStrain(i){
   if(licA.length)h+="<h4>许可与采购</h4>"+licA.map(function(x){var t='<p>· '+escM(x.text);if(x.url)t+=' <a href="'+escM(x.url)+'" target="_blank" style="color:var(--brand)">条款↗</a>';return t+"</p>"}).join("");
   else if(s.license_note)h+="<h4>许可条款</h4><p>"+escM(s.license_note)+"</p>";
   var refA=(s.references||[]).filter(function(x){return x&&x.title});
-  if(refA.length)h+="<h4>文献参考</h4>"+refA.map(function(x){var t='<p><b>'+escM(x.title)+'</b> <span style="color:var(--muted)">'+escM(x.year||"")+(x.authors?" · "+escM(x.authors.split(";")[0].trim())+" et al.":"")+'</span>';if(x.pmid)t+=' <a href="https://pubmed.ncbi.nlm.nih.gov/'+escM(x.pmid)+'/" target="_blank" style="color:var(--brand)">PubMed↗</a>';return t+"</p>"}).join("");
+  if(refA.length)h+="<h4>文献参考</h4>"+refA.slice(0,4).map(function(x){var t='<p><b>'+escM(x.title)+'</b> <span style="color:var(--muted)">'+escM(x.year||"")+(x.authors?" · "+escM(x.authors.split(";")[0].trim())+" et al.":"")+'</span>';if(x.pmid)t+=' <a href="https://pubmed.ncbi.nlm.nih.gov/'+escM(x.pmid)+'/" target="_blank" style="color:var(--brand)">PubMed↗</a>';return t+"</p>"}).join("")+(refA.length>4?'<p style="color:var(--muted)">… 共'+refA.length+'条，<a href="'+esc(s.source_url||"https://www.jax.org/strain/"+s["编号"])+'" target="_blank" style="color:var(--brand)">见官网↗</a></p>':"");
   else if(s["关键文献"])h+="<h4>关键文献</h4><p>"+escM(s["关键文献"])+"</p>";
   if(s["主要应用场景"])h+="<h4>应用场景</h4><p>"+escM(s["主要应用场景"])+"</p>";
   if(s["相关疾病领域"])h+='<div class="kv"><b>疾病领域</b><span>'+esc(s["相关疾病领域"])+"</span></div>";
