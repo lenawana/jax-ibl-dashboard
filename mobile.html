@@ -404,6 +404,7 @@ function renderStrains(){
 }
 
 /* ============ 品系详情 ============ */
+function jumpStrain(num){var i=DATA.strains.findIndex(function(x){return x["编号"]===num});if(i>=0)openStrain(i)}
 function openStrain(i){
   var s=DATA.strains[i];if(!s)return;
   var intl=fmtUSD(s.price_intl_4wk_male),dom=fmtUSD(s.price_dom_4wk_male);
@@ -426,6 +427,11 @@ function openStrain(i){
     (s.fab_benefit?'<p><b style="color:var(--acfg)">获益：</b>'+escM(s.fab_benefit)+"</p>":"");
   if(s.mechanism)h+="<h4>机制</h4><p>"+escM(s.mechanism)+"</p>";
   if(s.genotype)h+="<h4>基因型</h4><p style=\"font-family:var(--mono);font-size:12.5px\">"+escM(s.genotype)+"</p>";
+  function linkM(t){var out=escM(t||"");return out.replace(/(^|[^0-9A-Za-z>])(\d{6})(?![0-9])/g,function(m,p,num){var ok=DATA.strains.some(function(x){return x["编号"]===num});if(!ok)return p+num;return p+'<b style="color:var(--brand);cursor:pointer" onclick="jumpStrain('+num+')">'+num+'</b>'})}
+  var cfA=(s.customer_feedback||[]).filter(function(x){return x&&x.text});
+  if(cfA.length)h+="<h4>客户反馈</h4>"+cfA.map(function(x){return '<p>· '+(x.from?"<b>"+escM(x.from)+"</b>：":"")+escM(x.text)+(x.date?' <span style="color:var(--muted)">'+escM(x.date)+"</span>":"")+"</p>"}).join("");
+  var rsA=(s.customer_research||[]).filter(function(x){return x&&x.text});
+  if(rsA.length)h+="<h4>相关客户研究</h4>"+rsA.map(function(x){var t='<p>· '+(x.from?"<b>"+escM(x.from)+"</b>：":"")+linkM(x.text);if(x.url)t+=' <a href="'+escM(x.url)+'" target="_blank" style="color:var(--brand)">链接↗</a>';return t+"</p>"}).join("");
   /* 价格 */
   var pg=s.price_by_genotype||[];
   if(intl||dom||pg.length){
