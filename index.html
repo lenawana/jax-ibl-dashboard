@@ -176,7 +176,7 @@ tbody tr:hover{background:#eff6ff}
 /* ===== 详情弹层 ===== */
 .modal-overlay{position:fixed;inset:0;background:rgba(15,23,42,.55);backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;z-index:1000;opacity:0;pointer-events:none;transition:opacity .2s ease;padding:24px}
 .modal-overlay.show{opacity:1;pointer-events:auto}
-.modal{background:#fff;border-radius:16px;max-width:760px;width:100%;max-height:85vh;overflow-y:auto;padding:32px;position:relative;transform:scale(.94) translateY(14px);transition:transform .28s cubic-bezier(.34,1.4,.64,1);box-shadow:0 24px 60px rgba(15,23,42,.3)}
+.modal{background:#fff;border-radius:16px;max-width:760px;width:100%;max-height:85vh;overflow:hidden;padding:0;display:flex;flex-direction:column;position:relative;transform:scale(.94) translateY(14px);transition:transform .28s cubic-bezier(.34,1.4,.64,1);box-shadow:0 24px 60px rgba(15,23,42,.3)}
 .modal-overlay.show .modal{transform:scale(1) translateY(0)}
 .modal h2{font-size:22px;font-weight:800;color:var(--navy);margin-bottom:14px;padding-right:40px}
 .modal-close{position:absolute;top:16px;right:16px;width:34px;height:34px;border-radius:50%;border:none;background:#f1f5f9;color:var(--text2);font-size:15px;cursor:pointer;transition:all .2s ease;z-index:2}
@@ -292,8 +292,8 @@ tbody tr:hover{background:#eff6ff}
 .archive-title{font-size:14px;font-weight:800;color:var(--navy);letter-spacing:.5px;display:flex;align-items:center;gap:8px;margin-bottom:6px}
 .archive-title::before{content:'';width:4px;height:15px;background:#2F6BFF;border-radius:2px;flex:none}
 .archive-group .detail-section{margin-top:12px}
-.modal-sticky{position:sticky;top:0;z-index:6;background:#fff;margin:-32px -32px 2px;padding:14px 32px 10px;border-bottom:1px solid #E2E8F0;box-shadow:0 4px 12px rgba(15,23,42,.06)}
-.modal-sticky::after{content:'';position:absolute;left:0;right:0;bottom:-20px;height:20px;background:linear-gradient(to bottom,rgba(255,255,255,.93),rgba(255,255,255,0));pointer-events:none}
+.modal-sticky{flex:none;background:#fff;padding:14px 32px 12px;border-bottom:1px solid #CBD5E1}
+.modal-scroll{flex:1 1 0;min-height:0;overflow-y:auto;padding:20px 32px 28px}
 .modal-price-note{font-family:var(--mono);font-size:11.5px;color:var(--text2);margin-top:4px;letter-spacing:.2px;line-height:1.55}
 .cmp-foot{font-size:12px;color:var(--text2);line-height:1.6;margin-top:8px}
 </style>
@@ -52185,8 +52185,8 @@ function showStrain(id){
   var tech='<div class="detail-section"><h3>技术细节</h3><div class="tech-body"><p><strong>基因型：</strong>'+esc(s.genotype||s.品系名称||'详见JAX官网')+'</p><p><strong>作用机理：</strong>'+esc(s.mechanism||'详见JAX官网')+'</p>'+(s.detailed_desc?'<p><strong>表型与分子注记：</strong>'+esc(s.detailed_desc)+'</p>':'')+(s.breeding_summary?'<p><strong>繁育特征：</strong>'+esc(s.breeding_summary)+'</p>':'')+'</div></div>';
   var archInner=sec3+licSec+tech;
   var arch=archInner?'<div class="archive-group"><div class="archive-title">JAX官方品系档案</div>'+archInner+'</div>':'';
-  document.getElementById('strainModalContent').innerHTML=head+dis+sec1+sec2+cfSec+rsSec+sec4+arch;
-  var msc=document.getElementById('strainModalContent');if(msc)msc.scrollTop=0;
+  document.getElementById('strainModalContent').innerHTML=head+'<div class="modal-scroll">'+dis+sec1+sec2+cfSec+rsSec+sec4+arch+'</div>';
+  var msc=document.querySelector('#strainModalContent .modal-scroll');if(msc)msc.scrollTop=0;
   document.getElementById('strainModal').classList.add('show')
 }
 function closeModal(){document.getElementById('strainModal').classList.remove('show')}
