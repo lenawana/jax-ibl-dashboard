@@ -65,6 +65,7 @@ main{padding:12px 12px 8px;max-width:640px;margin:0 auto}
 .tag.r{background:#fef2f2;color:#dc2626}
 .tag.p{background:#f5f3ff;color:#7c3aed}
 .tag.n{background:#f1f5f9;color:#475569}
+.tag.b{background:#eff6ff;color:#2563eb}
 .price{flex:none;font-size:12px;font-weight:700;color:#059669;background:#ecfdf5;border-radius:6px;padding:2px 7px;margin-top:1px}
 .price.ask{color:#b45309;background:#fffbeb}
 .sechead{font-size:13px;font-weight:700;color:var(--navy);margin:16px 2px 8px;display:flex;align-items:center;gap:6px}
@@ -405,13 +406,15 @@ function renderStrains(){
 
 /* ============ 品系详情 ============ */
 function jumpStrain(num){var i=DATA.strains.findIndex(function(x){return x["编号"]===num});if(i>=0)openStrain(i)}
-function openStrain(i){
+  function supTag(s){var l=s.licensing||[],e='';for(var i=0;i<l.length;i++){var t=(l[i]||{}).text||'';if(t.indexOf('供应状态：')===0){e=t.slice(5);break}}if(s['编号']==='005558')e='现货供应';if(!e)return'';var v=e.replace(/；支持Cryo冷冻复苏/g,' · Cryo').replace(/Mice are typically available in ~12 weeks/g,'约12周可订').replace(/In High Demand - Please Inquire/g,'In High Demand·询价').replace(/；/g,' · ');var cls='g';if(/In High Demand/.test(v))cls='r';else if(/MMRRC/.test(v))cls='p';else if(/预计可得|Preorder/.test(v))cls='o';else if(/约12周可订|Alternatives/.test(v))cls='b';else if(/Registering/.test(v))cls='n';return '<span class="tag '+cls+'">'+esc(v)+"</span>"}
+  function openStrain(i){
   var s=DATA.strains[i];if(!s)return;
   var intl=fmtUSD(s.price_intl_4wk_male),dom=fmtUSD(s.price_dom_4wk_male);
   var h='<h3>'+esc(s["品系名称"]||"-")+'</h3>';
   h+='<div class="meta" style="margin:2px 0 8px"><span class="tag n">编号 '+esc(s["编号"])+"</span>"+
     '<span class="tag">'+esc(normField(s.disease_primary||s["相关疾病领域"]))+"</span>"+
     (s.is_mmrrc?'<span class="tag p">MMRRC '+esc(s.mmrrc_id||"")+"</span>":"")+
+    supTag(s)+
     (s["通用名"]?'<span class="tag n">通用名 '+esc(s["通用名"])+"</span>":"")+"</div>";
   if(s.strain_full_name)h+='<div class="kv"><b>全名</b><span>'+esc(s.strain_full_name)+"</span></div>";
   /* 六维卖点 */
@@ -450,7 +453,7 @@ function openStrain(i){
   }else{
     h+='<div class="tag o" style="display:inline-block;margin-top:8px">价格请询价</div>';
   }
-  var licA=(s.licensing||[]).filter(function(x){return x&&x.text});
+  var licA=(s.licensing||[]).filter(function(x){return x&&x.text&&x.text.indexOf('供应状态：')!==0});
   h+="<h4>许可与采购</h4><p>· <a href='https://www.jax.org/about-us/legal-information/terms-and-conditions-of-product-use' target='_blank' style='color:var(--brand)'>通用条款与条件↗</a>"+(s.is_mmrrc?" · <a href='https://www.mmrrc.org/catalog/cellLineSDS.php?mmrrc_id="+escM(s.mmrrc_id||"")+"#order_req_Conditions_of_Distribution' target='_blank' style='color:var(--brand)'>MMRRC附加条件↗</a>":"")+"</p>"
     +(licA.length?licA.map(function(x){var t='<p>· '+escM(x.text);if(x.url)t+=' <a href="'+escM(x.url)+'" target="_blank" style="color:var(--brand)">条款↗</a>';return t+"</p>"}).join(""):(s.license_note?"<p>"+escM(s.license_note)+"</p>":""))
     +"<p>· 许可联系：电话 207-288-6470 · <a href='mailto:TechTran@jax.org' style='color:var(--brand)'>TechTran@jax.org</a></p>";

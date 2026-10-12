@@ -52145,6 +52145,7 @@ function showStrain(id){
   var s=DATA.strains.find(function(x){return x.编号===id});if(!s)return;
   var nm=s.strain_full_name||s.品系名称||'';
   function linkify(t){if(!t)return'';return esc(t).replace(/(https?:\/\/[^\s<"]+)/g,function(u){return'<a href="'+u+'" target="_blank" rel="noopener noreferrer" style="color:#2F6BFF;word-break:break-all">'+u+'</a>'})}
+    function supBadge(s){var l=s.licensing||[],e='';for(var i=0;i<l.length;i++){var t=(l[i]||{}).text||'';if(t.indexOf('供应状态：')===0){e=t.slice(5);break}}if(s['编号']==='005558')e='现货供应';if(!e)return'';var v=e.replace(/；支持Cryo冷冻复苏/g,' · Cryo').replace(/Mice are typically available in ~12 weeks/g,'约12周可订').replace(/In High Demand - Please Inquire/g,'In High Demand·询价').replace(/；/g,' · ');var cls='badge-green';if(/In High Demand/.test(v))cls='badge-red';else if(/MMRRC/.test(v))cls='badge-purple';else if(/预计可得|Preorder/.test(v))cls='badge-orange';else if(/约12周可订|Alternatives/.test(v))cls='badge-blue';else if(/Registering/.test(v))cls='badge-gray';return '<span class="badge '+cls+'">'+esc(v)+'</span>'}
   function dedupeTexts(arr){var out=[],norms=[];arr.forEach(function(t){if(!t)return;t=String(t).trim();if(!t)return;var n=t.replace(/\s+/g,'');var dup=norms.some(function(x){return x===n||x.indexOf(n)>=0||n.indexOf(x)>=0});if(!dup){out.push(t);norms.push(n)}});return out}
   var pr=(s.price_intl_4wk_male>0)?s.price_intl_4wk_male:0;
   var tldr=s.pitch_what?'<div class="strain-tldr"><span class="tldr-tag">一句话介绍</span>'+esc(s.pitch_what)+'</div>':'';
@@ -52157,6 +52158,7 @@ function showStrain(id){
     +'<div class="strain-modal-head"><h2>'+esc(s.编号)+' <span style="font-weight:400;font-size:14px;color:var(--text2)">'+esc(nm)+'</span></h2>'
     +(s.is_mmrrc?'<span class="badge badge-purple">MMRRC'+(s.mmrrc_id?' #'+esc(s.mmrrc_id):'')+'</span>':'')
     +(s.license_note?'<span class="badge badge-license">需许可</span>':'')
+    +supBadge(s)
     +'<span class="modal-price">'+(pr?'$'+pr.toFixed(2):'询价')+'</span>'
     +'<a class="strain-link" href="https://www.jax.org/strain/'+esc(s.编号)+'" target="_blank" rel="noopener noreferrer">JAX官网 ↗</a></div>'
     +(pgNote?'<div class="modal-price-note">'+pgNote+'</div>':'')
@@ -52188,7 +52190,7 @@ function showStrain(id){
   var lic='';
   if(s.license_note)lic+='<p>'+esc(s.license_note)+'</p>';
   if(s.is_mmrrc)lic+='<p><strong>MMRRC：</strong>该品系由NIH MMRRC保种'+(s.mmrrc_id?'（编号 '+esc(s.mmrrc_id)+'）':'')+'，亦可通过MMRRC渠道获取</p>';
-  var lics=(s.licensing||[]).filter(function(l){return l&&l.text});
+  var lics=(s.licensing||[]).filter(function(l){return l&&l.text&&l.text.indexOf('供应状态：')!==0});
   var licSec='<div class="detail-section"><h3>许可</h3>'
     +'<p>· <a href="https://www.jax.org/about-us/legal-information/terms-and-conditions-of-product-use" target="_blank" rel="noopener noreferrer" style="color:#2F6BFF">查看通用条款与条件（General Terms and Conditions）↗</a></p>'
     +(s.is_mmrrc?'<p>· <a href="https://www.mmrrc.org/catalog/cellLineSDS.php?mmrrc_id='+esc(s.mmrrc_id||'')+'#order_req_Conditions_of_Distribution" target="_blank" rel="noopener noreferrer" style="color:#2F6BFF">查看 MMRRC 附加分发条件 ↗</a></p>':'')
