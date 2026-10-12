@@ -108,7 +108,7 @@ main{padding:12px 12px 8px;max-width:640px;margin:0 auto}
   background:#f1f5f9;color:#475569;font-size:15px;line-height:28px;text-align:center;font-weight:700}
 #sheetBody{overflow-y:auto;-webkit-overflow-scrolling:touch;padding:4px 16px calc(20px + env(safe-area-inset-bottom))}
 #sheetBody h3{font-size:17px;font-weight:700;line-height:1.45;margin:8px 0 4px;padding-right:30px}
-#sheetBody h4{font-size:13px;color:var(--navy);margin:14px 0 5px;font-weight:700}
+#sheetBody h4{font-size:13px;color:var(--navy);margin:14px 0 5px;font-weight:700}.dd-full{margin:4px 0}.dd-full summary{cursor:pointer;color:var(--brand);font-size:12px}.dd-full p{color:var(--muted);font-size:12px}
 #sheetBody p{font-size:13.5px;color:#334155;margin:3px 0}
 #sheetBody .kv{display:flex;gap:8px;font-size:13px;margin:5px 0}
 #sheetBody .kv b{flex:none;width:76px;color:var(--muted);font-weight:500;font-size:12.5px}
@@ -429,7 +429,7 @@ function jumpStrain(num){var i=DATA.strains.findIndex(function(x){return x["编�
     (s.fab_advantage?'<p><b style="color:var(--acfg)">优势：</b>'+escM(s.fab_advantage)+"</p>":"")+
     (s.fab_benefit?'<p><b style="color:var(--acfg)">获益：</b>'+escM(s.fab_benefit)+"</p>":"");
   if(s.mechanism)h+="<h4>机制</h4><p>"+escM(s.mechanism)+"</p>";
-  if(s.detailed_desc)h+="<h4>表型与分子注记</h4><p>"+escM(s.detailed_desc)+"</p>";
+  if(s.detailed_desc_short)h+="<h4>表型与分子注记</h4><p>"+escM(s.detailed_desc_short)+"</p>"+(s.detailed_desc?"<details class=\"dd-full\"><summary>展开完整描述</summary><p>"+escM(s.detailed_desc)+"</p></details>":"");else if(s.detailed_desc)h+="<h4>表型与分子注记</h4><p>"+escM(s.detailed_desc)+"</p>";
   if(s.breeding_summary)h+="<h4>繁育特征</h4><p>"+escM(s.breeding_summary)+"</p>";
   if(s.genotype)h+="<h4>基因型</h4><p style=\"font-family:var(--mono);font-size:12.5px\">"+escM(s.genotype)+"</p>";
   function linkM(t){var out=escM(t||"");return out.replace(/(^|[^0-9A-Za-z>])(\d{6})(?![0-9])/g,function(m,p,num){var ok=DATA.strains.some(function(x){return x["编号"]===num});if(!ok)return p+num;return p+'<b style="color:var(--brand);cursor:pointer" onclick="jumpStrain('+num+')">'+num+'</b>'})}
@@ -457,6 +457,15 @@ function jumpStrain(num){var i=DATA.strains.findIndex(function(x){return x["编�
   h+="<h4>许可与采购</h4><p>· <a href='https://www.jax.org/about-us/legal-information/terms-and-conditions-of-product-use' target='_blank' style='color:var(--brand)'>通用条款与条件↗</a>"+(s.is_mmrrc?" · <a href='https://www.mmrrc.org/catalog/cellLineSDS.php?mmrrc_id="+escM(s.mmrrc_id||"")+"#order_req_Conditions_of_Distribution' target='_blank' style='color:var(--brand)'>MMRRC附加条件↗</a>":"")+"</p>"
     +(licA.length?licA.map(function(x){var t='<p>· '+escM(x.text);if(x.url)t+=' <a href="'+escM(x.url)+'" target="_blank" style="color:var(--brand)">条款↗</a>';return t+"</p>"}).join(""):(s.license_note?"<p>"+escM(s.license_note)+"</p>":""))
     ";
+  var sc=s.suggested_controls,ctrlH="";
+  if(sc&&((sc.exact&&sc.exact.length)||(sc.approx&&sc.approx.length))){
+    var fmtC=function(c){var t="<p>· "+(c.stock?"<a href='https://www.jax.org/strain/"+escM(c.stock)+"' target='_blank' style='color:var(--brand)'>"+escM(c.name)+"</a>":escM(c.name));if(c.note){var nt=c.note.length>100?c.note.slice(0,100)+"…":c.note;t+=' <span style="color:var(--muted)">'+escM(nt)+"</span>"}return t+"</p>"};
+    var rowsC="";(sc.exact||[]).forEach(function(c){rowsC+=fmtC(c)});
+    if(sc.approx&&sc.approx.length)rowsC+=(sc.exact&&sc.exact.length?"<p style='margin-top:6px;color:var(--muted);font-weight:600'>近似对照：</p>":"");
+    (sc.approx||[]).forEach(function(c){rowsC+=fmtC(c)});
+    ctrlH="<h4>JAX官方推荐对照</h4>"+rowsC;
+  }
+  if(ctrlH)h+=ctrlH;
   var refA=(s.references||[]).filter(function(x){return x&&x.title});if(refA.length>1)refA=refA.slice().sort(function(a,b){return(b.citations||0)-(a.citations||0)});
   if(refA.length)h+="<h4>文献参考</h4>"+refA.slice(0,4).map(function(x){var t='<p>'+escM(x.title)+' <span style="color:var(--muted)">'+escM(x.year||"")+(x.authors?" · "+escM(x.authors.split(";")[0].trim())+" et al.":"")+'</span>';if(x.pmid)t+=' <a href="https://pubmed.ncbi.nlm.nih.gov/'+escM(x.pmid)+'/" target="_blank" style="color:var(--brand)">PubMed↗</a>';return t+"</p>"}).join("")+(refA.length>4?'<p style="color:var(--muted)">… 共'+refA.length+'条，<a href="'+esc(s.source_url||"https://www.jax.org/strain/"+s["编号"])+'" target="_blank" style="color:var(--brand)">见官网↗</a></p>':"");
   else if(s["关键文献"])h+="<h4>关键文献</h4><p>"+escM(s["关键文献"])+"</p>";
