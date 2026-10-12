@@ -451,8 +451,9 @@ function openStrain(i){
     h+='<div class="tag o" style="display:inline-block;margin-top:8px">价格请询价</div>';
   }
   var licA=(s.licensing||[]).filter(function(x){return x&&x.text});
-  if(licA.length)h+="<h4>许可与采购</h4>"+licA.map(function(x){var t='<p>· '+escM(x.text);if(x.url)t+=' <a href="'+escM(x.url)+'" target="_blank" style="color:var(--brand)">条款↗</a>';return t+"</p>"}).join("");
-  else if(s.license_note)h+="<h4>许可条款</h4><p>"+escM(s.license_note)+"</p>";
+  h+="<h4>许可与采购</h4><p>· <a href='https://www.jax.org/about-us/legal-information/terms-and-conditions-of-product-use' target='_blank' style='color:var(--brand)'>通用条款与条件↗</a>"+(s.is_mmrrc?" · <a href='https://www.mmrrc.org/catalog/cellLineSDS.php?mmrrc_id="+escM(s.mmrrc_id||"")+"#order_req_Conditions_of_Distribution' target='_blank' style='color:var(--brand)'>MMRRC附加条件↗</a>":"")+"</p>"
+    +(licA.length?licA.map(function(x){var t='<p>· '+escM(x.text);if(x.url)t+=' <a href="'+escM(x.url)+'" target="_blank" style="color:var(--brand)">条款↗</a>';return t+"</p>"}).join(""):(s.license_note?"<p>"+escM(s.license_note)+"</p>":""))
+    +"<p>· 许可联系：电话 207-288-6470 · <a href='mailto:TechTran@jax.org' style='color:var(--brand)'>TechTran@jax.org</a></p>";
   var refA=(s.references||[]).filter(function(x){return x&&x.title});
   if(refA.length)h+="<h4>文献参考</h4>"+refA.slice(0,4).map(function(x){var t='<p><b>'+escM(x.title)+'</b> <span style="color:var(--muted)">'+escM(x.year||"")+(x.authors?" · "+escM(x.authors.split(";")[0].trim())+" et al.":"")+'</span>';if(x.pmid)t+=' <a href="https://pubmed.ncbi.nlm.nih.gov/'+escM(x.pmid)+'/" target="_blank" style="color:var(--brand)">PubMed↗</a>';return t+"</p>"}).join("")+(refA.length>4?'<p style="color:var(--muted)">… 共'+refA.length+'条，<a href="'+esc(s.source_url||"https://www.jax.org/strain/"+s["编号"])+'" target="_blank" style="color:var(--brand)">见官网↗</a></p>':"");
   else if(s["关键文献"])h+="<h4>关键文献</h4><p>"+escM(s["关键文献"])+"</p>";
