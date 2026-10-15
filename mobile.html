@@ -316,11 +316,13 @@ function renderHome(){
   (DATA.industry_news||[]).forEach(function(n){if(n.date&&n.date>last)last=n.date});
   $("updDate").textContent=last?("数据至 "+last):"";
   $("statGrid").innerHTML=
-    '<div class="stat"><b>'+st+'</b><span>品系</span></div>'+
-    '<div class="stat"><b>'+Object.keys(uniq).length+'</b><span>客户</span></div>'+
-    '<div class="stat"><b>'+cu.length+'</b><span>管线</span></div>'+
-    '<div class="stat"><b>'+co+'</b><span>竞对</span></div>'+
-    '<div class="stat"><b>'+(nw+li)+'</b><span>情报</span></div>';
+    '<div class="stat" data-t="strains" style="cursor:pointer"><b>'+st+'</b><span>品系</span></div>'+
+    '<div class="stat" data-t="custs" style="cursor:pointer"><b>'+Object.keys(uniq).length+'</b><span>客户</span></div>'+
+    '<div class="stat" data-t="custs" style="cursor:pointer"><b>'+cu.length+'</b><span>管线</span></div>'+
+    '<div class="stat" data-t="comps" style="cursor:pointer"><b>'+co+'</b><span>竞对</span></div>'+
+    '<div class="stat" data-t="news" style="cursor:pointer"><b>'+(nw+li)+'</b><span>情报</span></div>';
+  var sg=$("statGrid");
+  if(sg&&!sg._bound){sg._bound=1;sg.addEventListener("click",function(e){var el=e.target&&e.target.closest?e.target.closest(".stat"):null;if(el&&el.dataset.t)switchTab(el.dataset.t)})}
   /* 领域快捷入口 */
   var cnt={},order=[];
   DATA.strains.forEach(function(s){
