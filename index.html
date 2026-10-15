@@ -512,7 +512,7 @@ function showStrain(id){
   var head='<div class="modal-sticky"><button class="modal-close" onclick="closeModal()">✕</button>'
     +'<div class="strain-modal-head"><h2>'+esc(s.编号)+' <span style="font-weight:400;font-size:14px;color:var(--text2)">'+esc(nm)+'</span></h2>'
     +(s.is_mmrrc?'<span class="badge badge-purple">MMRRC'+(s.mmrrc_id?' #'+esc(s.mmrrc_id):'')+'</span>':'')
-    +(s.license_note?'<span class="badge badge-license">需许可</span>':'')
+    +((s.license_note||s.is_mmrrc||(function(){var ll=s.licensing||[];for(var i=0;i<ll.length;i++){var t=(ll[i]||{}).text||'';if(t&&t.indexOf('供应状态：')!==0)return true}return false})())?'<span class="badge badge-license">需特殊许可</span>':'')
     +supBadge(s)
     +'<span class="modal-price">'+(pr?'$'+pr.toFixed(2):'询价')+'</span>'
     +'<a class="strain-link" href="https://www.jax.org/strain/'+esc(s.编号)+'" target="_blank" rel="noopener noreferrer">JAX官网 ↗</a></div>'
@@ -547,7 +547,6 @@ function showStrain(id){
   if(s.is_mmrrc)lic+='<p><strong>MMRRC：</strong>该品系由NIH MMRRC保种'+(s.mmrrc_id?'（编号 '+esc(s.mmrrc_id)+'）':'')+'，亦可通过MMRRC渠道获取</p>';
   var lics=(s.licensing||[]).filter(function(l){return l&&l.text&&l.text.indexOf('供应状态：')!==0});
   var licSec='<div class="detail-section"><h3>许可</h3>'
-    +'<p>· <a href="https://www.jax.org/about-us/legal-information/terms-and-conditions-of-product-use" target="_blank" rel="noopener noreferrer" style="color:#2F6BFF">查看通用条款与条件 ↗</a></p>'
     +(s.is_mmrrc?'<p>· <a href="https://www.mmrrc.org/catalog/cellLineSDS.php?mmrrc_id='+esc(s.mmrrc_id||'')+'#order_req_Conditions_of_Distribution" target="_blank" rel="noopener noreferrer" style="color:#2F6BFF">查看 MMRRC 附加分发条件 ↗</a></p>':'')
     +(lics.length?lics.map(function(l){var t='<p>· '+esc(l.text);if(l.url)t+=' <a href="'+esc(l.url)+'" target="_blank" rel="noopener noreferrer" style="color:#2F6BFF">条款↗</a>';return t+'</p>'}).join(''):(lic||'<p>· 官网未列出该品系专属许可信，按 JAX 标准条款执行</p>'))
 +'</div>';

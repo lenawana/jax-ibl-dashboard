@@ -415,6 +415,7 @@ function jumpStrain(num){var i=DATA.strains.findIndex(function(x){return x["编�
     '<span class="tag">'+esc(normField(s.disease_primary||s["相关疾病领域"]))+"</span>"+
     (s.is_mmrrc?'<span class="tag p">MMRRC '+esc(s.mmrrc_id||"")+"</span>":"")+
     supTag(s)+
+    ((s.license_note||s.is_mmrrc||(function(){var ll=s.licensing||[];for(var i=0;i<ll.length;i++){var t=(ll[i]||{}).text||'';if(t&&t.indexOf('供应状态：')!==0)return true}return false})())?'<span class="tag" style="background:#fef2f2;color:#dc2626">需特殊许可</span>':"")+
     (s["通用名"]?'<span class="tag n">通用名 '+esc(s["通用名"])+"</span>":"")+"</div>";
   if(s.strain_full_name)h+='<div class="kv"><b>全名</b><span>'+esc(s.strain_full_name)+"</span></div>";
   /* 六维卖点 */
@@ -454,8 +455,8 @@ function jumpStrain(num){var i=DATA.strains.findIndex(function(x){return x["编�
     h+='<div class="tag o" style="display:inline-block;margin-top:8px">价格请询价</div>';
   }
   var licA=(s.licensing||[]).filter(function(x){return x&&x.text&&x.text.indexOf('供应状态：')!==0});
-  h+="<h4>许可与采购</h4><p>· <a href='https://www.jax.org/about-us/legal-information/terms-and-conditions-of-product-use' target='_blank' style='color:var(--brand)'>通用条款与条件↗</a>"+(s.is_mmrrc?" · <a href='https://www.mmrrc.org/catalog/cellLineSDS.php?mmrrc_id="+escM(s.mmrrc_id||"")+"#order_req_Conditions_of_Distribution' target='_blank' style='color:var(--brand)'>MMRRC附加条件↗</a>":"")+"</p>"
-    +(licA.length?licA.map(function(x){var t='<p>· '+escM(x.text);if(x.url)t+=' <a href="'+escM(x.url)+'" target="_blank" style="color:var(--brand)">条款↗</a>';return t+"</p>"}).join(""):(s.license_note?"<p>"+escM(s.license_note)+"</p>":""))
+  h+="<h4>许可与采购</h4>"+(s.is_mmrrc?"<p>· <a href='https://www.mmrrc.org/catalog/cellLineSDS.php?mmrrc_id="+escM(s.mmrrc_id||"")+"#order_req_Conditions_of_Distribution' target='_blank' style='color:var(--brand)'>MMRRC附加条件↗</a></p>":"")
+    +(licA.length?licA.map(function(x){var t='<p>· '+escM(x.text);if(x.url)t+=' <a href="'+escM(x.url)+'" target="_blank" style="color:var(--brand)">条款↗</a>';return t+"</p>"}).join(""):(s.license_note?"<p>"+escM(s.license_note)+"</p>":"<p>· 官网未列出该品系专属许可信，按 JAX 标准条款执行</p>"))
     ";
   var sc=s.suggested_controls,ctrlH="";
   if(sc&&((sc.exact&&sc.exact.length)||(sc.approx&&sc.approx.length))){
