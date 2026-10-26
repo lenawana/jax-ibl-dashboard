@@ -1,4 +1,4 @@
-// 仪表盘数据 - 自动生成于 2026-10-26 09:30:15
+// 仪表盘数据 - 自动生成于 2026-10-26 10:12:00
 const dashboardData = {
   "products": [
     {
@@ -48496,6 +48496,185 @@ const dashboardData = {
         ]
       },
       "detailed_desc_short": "NOD/ShiLtJ背景Rag1tm1Mom与Il2rgtm1Wjl双敲除重度免疫缺陷鼠，B、T、NK细胞全缺；抗辐照与基因毒性药物显著强于scid系，辐照预处理后人CD34+重建水平高于NSG并获多系造血与完整人T细胞库，未处理成鼠亦可高效重建人PBMC；是CD34+/PBMC人源化、PDX移植及放疗联合研究的权威宿主。"
+    },
+    {
+      "编号": "006912",
+      "品系名称": "C57BL/6-Tg(Tcra2D2,Tcrb2D2)1Kuch/J",
+      "相关疾病领域": "多发性硬化（MS）、视神经炎、自身免疫性脑脊髓炎（EAE）",
+      "主要应用场景": "MOG特异性自身反应性T细胞库研究；EAE/MS机制与干预评估；自发视神经炎与CNS自身免疫关系研究；T细胞耐受与阳性选择",
+      "特色/特点/优势": "表达MOG特异性TCR（2D2克隆来源Vα3.2/Vβ11）的转基因鼠，转基因T细胞不被中枢删除或耐受、功能健全且高效正选择；半合子2.5-5月龄约4%自发EAE，首年40%自发孤立性视神经炎而无EAE临床/组织学表现；脾细胞对全长MOG及MOG35-55肽特异应答（OVA对照不应答）；Harvard/Brigham & Women's Vijay Kuchroo实验室经典供体",
+      "关键文献": "Bettelli E et al. Myelin oligodendrocyte glycoprotein-specific T cell receptor transgenic mice develop spontaneous autoimmune optic neuritis. J Exp Med. 2003. https://pubmed.ncbi.nlm.nih.gov/12732654/[PMID:12732654]",
+      "其它品牌相关品系": "",
+      "备注": "Coisogenic+Transgenic；供体Vijay Kuchroo（BWH）；TCR MOG转基因即通用名2D2 TCR；商用需BWH2许可（companies/for-profit需先取得许可再发运）；C57BL/6J背景",
+      "fab_feature": "MOG35-55特异性TCR（Vα3.2Jα18+Vβ11DJβ1.1，2D2克隆）转基因，C57BL/6J背景coisogenic",
+      "fab_advantage": "自身反应性T细胞不被删除或耐受、胸腺高效正选择，自发EAE与孤立性视神经炎表型定量明确（4%/40%）",
+      "fab_benefit": "MS/EAE与视神经炎研究的标准工具鼠，MOG免疫实验的TCR供体框架，可与自身免疫干预、T细胞追踪实验直接对接",
+      "genotype": "Tg(Tcra2D2,Tcrb2D2)1Kuch半合子（Transgenic，Coisogenic）",
+      "mechanism": "2D2克隆MOG特异性TCR转基因在多数胸腺细胞与CD4+脾细胞表达，转基因T细胞逃避阴性选择；识别MOG后触发CNS自身免疫，自发EAE或视神经炎",
+      "disease_primary": "免疫/自免",
+      "disease_secondary": "多发性硬化（MS）、视神经炎",
+      "strain_full_name": "C57BL/6-Tg(Tcra2D2,Tcrb2D2)1Kuch/J",
+      "source_url": "https://www.jax.org/strain/006912",
+      "pitch_what": "MOG特异性TCR转基因（2D2 TCR），C57BL/6J背景，转基因T细胞功能健全不被耐受",
+      "pitch_position": "MS/EAE与视神经炎自免研究的国际标准工具鼠，MOG35-55免疫实验首选TCR框架",
+      "pitch_adv": "自发EAE（2.5-5月龄约4%）与自发孤立性视神经炎（首年40%）双表型；对MOG35-55特异应答背景干净（OVA不交叉）；半合子维护简便",
+      "pitch_exclusive": "Harvard/BWH Vijay Kuchroo实验室供体、JAX独家保种（RRID:IMSR_JAX:006912），Coisogenic纯背景",
+      "pitch_evidence": "官网明确脾细胞对MOG/MOG35-55应答而OVA不应答；Bettelli 2003（PMID:12732654）首发自发视神经炎表型",
+      "pitch_fit": "MS/EAE机制与药物干预、视神经炎与神经免疫、MOG疫苗/耐受诱导策略、T细胞过继转移实验",
+      "通用名": "2D2 TCR（TCR^MOG）",
+      "is_mmrrc": false,
+      "mmrrc_id": "",
+      "license_note": "",
+      "price_intl_4wk_male": 474.5,
+      "price_dom_4wk_male": 0,
+      "price_genotype_updated": "2026-10-26",
+      "price_by_genotype": [
+        {
+          "genotype_id": "HEMI",
+          "genotype_desc": "Hemizygous for Tg(Tcra2D2,Tcrb2D2)1Kuch",
+          "price_usd": 474.5
+        },
+        {
+          "genotype_id": "NCAR",
+          "genotype_desc": "Non Carrier for Tg(Tcra2D2,Tcrb2D2)1Kuch",
+          "price_usd": 169.0
+        }
+      ],
+      "customer_feedback": [],
+      "customer_research": [],
+      "competitor_strains": [],
+      "references": [
+        {
+          "title": "Myelin oligodendrocyte glycoprotein-specific T cell receptor transgenic mice develop spontaneous autoimmune optic neuritis.",
+          "year": "2003",
+          "authors": "Bettelli E; Pagany M; Weiner HL; Linington C; Sobel RA; Kuchroo VK",
+          "pmid": "12732654"
+        }
+      ],
+      "licensing": [
+        {
+          "text": "Use of MICE by companies or for-profit entities requires a license prior to shipping.",
+          "url": "https://media.jax.org/asset/36c3b528-8c75-4738-817b-8653667c6a51/BWH2.pdf"
+        }
+      ],
+      "breeding_summary": "维持活体种群时，半合子小鼠与野生型（非携带者）同胞或C57BL/6J近交系（Stock No. 000664）交配。交配方案：+/+同胞 × 半合子（互交）；C57BL/6J（000664）× 半合子（互交）。毛色：Black。代次：N?+N2pN3。",
+      "detailed_desc": "2D2 TCR (TCR^MOG) transgenic mice express a myelin oligodendrocyte glycoprotein (MOG)-specific T cell receptor (TCR). Transgenic T cells are not deleted or tolerized, and are functionally competent. The majority of thymocytes express high and intermediate levels of the receptor, indicating efficient positive selection of transgenic T cells; the majority of CD4+ splenocytes express the transgenic TCR (Vα3.2 and Vβ11). Cultured splenocytes are responsive to full-length MOG and to MOG 35-55 peptide, but not to ovalbumin (OVA) control peptides. Between 2.5 and 5 months of age, 4% of hemizygous 2D2 TCR mice are reported to develop spontaneous experimental autoimmune encephalomyelitis (EAE). Within the first year, 40% of 2D2 TCR mice develop spontaneous, isolated optic neuritis with neither clinical or histological evidence of EAE. 分子注记：2D2 T细胞克隆Tcra的Vα3.2Jα18区与Tcrb的Vβ11DJβ1.1区插入TCR表达框，线性化质粒原核注射C57BL/6受精卵；2D2克隆分离自MOG35-55免疫的C57BL/6小鼠。",
+      "suggested_controls": {
+        "exact": [
+          {
+            "stock": "",
+            "name": "Noncarrier sibling（野生型同胞）",
+            "note": ""
+          }
+        ],
+        "approx": [
+          {
+            "stock": "000664",
+            "name": "C57BL/6J",
+            "note": ""
+          }
+        ]
+      },
+      "detailed_desc_short": "C57BL/6-Tg(Tcra2D2,Tcrb2D2)1Kuch/J（2D2 TCR）是表达髓鞘少突胶质细胞糖蛋白（MOG）特异性T细胞受体的转基因小鼠。转基因T细胞不被删除或耐受且功能健全，脾细胞对MOG35-55肽特异应答。半合子小鼠2.5至5月龄间约4%自发实验性自身免疫性脑脊髓炎（EAE），首年40%出现不伴EAE的自发孤立性视神经炎，是多发性硬化与神经免疫研究的经典工具鼠。"
+    },
+    {
+      "编号": "001131",
+      "品系名称": "C3SnSmn.Cg-Prkdc<scid>/J",
+      "相关疾病领域": "免疫缺陷、肿瘤/移植、病毒感染",
+      "主要应用场景": "T/B细胞缺失的免疫缺陷研究；异体与异种移植及细胞转移实验；肿瘤接种与免疫治疗评估（C3H背景）；病毒感染模型",
+      "特色/特点/优势": "Prkdc^scid自发突变（DNA-PKcs Y4046*提前终止）致V(D)J重排缺陷：无功能性T/B细胞、淋巴细胞减少、低丙球血症（多数个体测不到IgM/IgG/IgA），而造血微环境正常；接受异体与异种移植物，是细胞转移实验的理想受体；C3H背景的APC/髓系/NK功能呈品系依赖性；注意携带C3H/HeSnJ自发的Clcc1^m1J突变（小脑内质网应激敏感性增加）",
+      "关键文献": "Blunt T et al. Defective DNA-dependent protein kinase activity is linked to V(D)J recombination and DNA repair defects associated with the murine scid mutation. Cell. 1995. https://pubmed.ncbi.nlm.nih.gov/7889575/[PMID:7889575]",
+      "其它品牌相关品系": "",
+      "备注": "Congenic；scid突变自发于BALB/c-Igh^b（C.B-17）群，由Charles Sidman回交10代导入C3H/HeSn；C3H背景NK活性较高、颗粒细胞丰富，移植实验设计时需留意；与NSG（005557）相比无IL2rg缺陷，不支撑人造血系统重建",
+      "fab_feature": "Prkdc^scid纯合突变（T>A颠换致Y4046*提前终止，DNA-PKcs缺陷）congenic于C3SnSmN背景",
+      "fab_advantage": "T/B细胞双缺失而造血微环境正常，异种/异体移植接受度高；C3H背景髓系与NK功能保留，适合髓系依赖的肿瘤微环境研究",
+      "fab_benefit": "细胞转移与移植排斥实验的经典受体；与NSG/NOD-scid系列构成免疫缺陷梯度互补，覆盖从髓系保留到高度免疫缺陷的不同实验需求",
+      "genotype": "Prkdc^scid纯合（Spontaneous，Congenic）；伴C3H背景自发Clcc1^m1J",
+      "mechanism": "DNA-PKcs截短突变致V(D)J重排与DNA修复缺陷，T/B淋巴细胞发育阻滞，胸腺/淋巴结/脾滤泡近乎无淋巴细胞",
+      "disease_primary": "免疫/自免",
+      "disease_secondary": "免疫缺陷、移植与肿瘤",
+      "strain_full_name": "C3SnSmn.Cg-Prkdc<scid>/J",
+      "source_url": "https://www.jax.org/strain/001131",
+      "pitch_what": "C3H背景scid免疫缺陷鼠：Prkdc^scid纯合，T/B细胞双缺失、低丙球血症、造血微环境正常",
+      "pitch_position": "经典scid免疫缺陷模型在C3H背景的版本，移植/细胞转移与C3H源肿瘤同源实验的标准受体",
+      "pitch_adv": "接受异体与异种移植物；C3H背景NK/髓系/APC功能品系依赖性保留，适合髓系参与免疫与肿瘤微环境研究；纯合子互配维护简便（毛色Agouti）",
+      "pitch_exclusive": "JAX自主培育congenic系（RRID:IMSR_JAX:001131），scid突变系谱可溯（C.B-17→C3H/HeSn回交10代），遗传背景稳定",
+      "pitch_evidence": "官网明确多数纯合子测不到IgM/IgG1/IgG2a/IgG2b/IgG3/IgA；Blunt 1995（PMID:7889575）证实DNA-PK缺陷与V(D)J重排障碍关联",
+      "pitch_fit": "移植与细胞转移、肿瘤同源模型（C3H源）、病毒感染与疫苗评价、免疫缺陷背景下的髓系/NK研究",
+      "通用名": "C3H scid",
+      "is_mmrrc": false,
+      "mmrrc_id": "",
+      "license_note": "",
+      "price_intl_4wk_male": 474.5,
+      "price_dom_4wk_male": 0,
+      "price_genotype_updated": "2026-10-26",
+      "price_by_genotype": [
+        {
+          "genotype_id": "HOM",
+          "genotype_desc": "Homozygous for Prkdc<scid>",
+          "price_usd": 474.5
+        }
+      ],
+      "customer_feedback": [],
+      "customer_research": [],
+      "competitor_strains": [],
+      "references": [
+        {
+          "title": "Defective DNA-dependent protein kinase activity is linked to V(D)J recombination and DNA repair defects associated with the murine scid mutation.",
+          "year": "1995",
+          "authors": "Blunt T; Finnie NJ; Taccioli GE; Smith GC; Demengeot J; Gottlieb TM; Mizuta R; Varghese AJ; Alt FW; Jeggo PA; Jackson SP",
+          "pmid": "7889575"
+        },
+        {
+          "title": "Granulosa cell tumorigenesis in genetically hypogonadal-immunodeficient mice.",
+          "year": "1993",
+          "authors": "",
+          "pmid": "8339285"
+        },
+        {
+          "title": "The scid mouse mutant.",
+          "year": "1988",
+          "authors": "",
+          "pmid": "3416632"
+        },
+        {
+          "title": "Severe combined immunodeficiency (SCID) in the mouse. Pathology, reconstitution, models for immunodeficiency and allografts.",
+          "year": "1985",
+          "authors": "",
+          "pmid": "2412448"
+        },
+        {
+          "title": "Loss of Clcc1 Results in ER Stress, Misfolded Protein Accumulation, and Neurodegeneration in Cerebellum of Mice.",
+          "year": "2015",
+          "authors": "",
+          "pmid": "25698737"
+        }
+      ],
+      "licensing": [
+        {
+          "text": "供应状态：Available",
+          "url": ""
+        }
+      ],
+      "breeding_summary": "维持活体种群时，纯合子小鼠可互相交配。交配方案：Homozygote × Homozygote。毛色：Agouti。代次：N10F93pF7。",
+      "detailed_desc": "Mice homozygous for the severe combined immune deficiency spontaneous mutation (Prkdc^scid) are characterized by an absence of functional T cells and B cells, lymphopenia, hypogammaglobulinemia, and a normal hematopoietic microenvironment. Normal antigen-presenting cell, myeloid, and NK cell functions are strain dependent. scid mice carry a DNA repair defect and a defect in the rearrangement of genes that code for antigen-specific receptors on lymphocytes. Most homozygotes have no detectable IgM, IgG1, IgG2a, IgG2b, IgG3, or IgA. Thymus, lymph nodes, and splenic follicles are virtually devoid of lymphocytes. scid mice accept allogeneic and xenogeneic grafts making them an ideal model for cell transfer experiments. The Clcc1^m1J spontaneous mutation, which causes increased sensitivity to endoplasmic reticulum stress in the cerebellum, was identified in C3H/HeSnJ. 分子注记：Prkdc^scid为T-to-A颠换点突变，对应4046位密码子（转录本ENSMUST00000023352.8中为4095位）提前终止（p.Y4046*），表达于T与B淋巴细胞；另有自发Clcc1^m1J突变起源于C3H/HeSnJ。",
+      "suggested_controls": {
+        "exact": [
+          {
+            "stock": "",
+            "name": "野生型C3SnSmN同窝对照",
+            "note": ""
+          }
+        ],
+        "approx": [
+          {
+            "stock": "000659",
+            "name": "C3H/HeJ",
+            "note": "C3H背景近交对照"
+          }
+        ]
+      },
+      "detailed_desc_short": "C3SnSmn.Cg-Prkdc<scid>/J（C3H scid）是Prkdc^scid自发突变纯合的免疫缺陷小鼠，因V(D)J重排缺陷而缺失功能性T细胞和B细胞，表现为淋巴细胞减少与低丙种球蛋白血症，但造血微环境正常。该鼠可接受异体和异种移植物，是细胞转移实验的理想模型；其C3H背景的抗原提呈细胞、髓系和NK细胞功能呈品系依赖性，还携带导致小脑内质网应激敏感性增加的Clcc1自发突变，适用于移植、肿瘤接种和病毒感染等研究。"
     }
   ],
   "diseaseRecommendations": [
@@ -50153,10 +50332,6 @@ const dashboardData = {
         {
           "text": "2026.09.22 辽宁长生生物新增中标辽宁省检验检测认证中心实验动物及其饲料、垫料采购项目。",
           "url": "https://www.qixin.com/company/89c5501b-67a5-4d5e-8492-00e94bb93bca?tab=history"
-        },
-        {
-          "text": "2026.09.22 辽宁长生生物中标辽宁省检验检测认证中心实验动物及其饲料、垫料采购项目。",
-          "url": "https://www.qcc.com/creport/71ecad630e1ff4c4a5e8aa0408e6e4a6.html"
         },
         {
           "text": "2026.07.30 辽宁长生生物新增中标候选河北医科大学2026-2027年度教学用大、小鼠采购项目。",
