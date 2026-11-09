@@ -1,4 +1,4 @@
-// 仪表盘数据 - 自动生成于 2026-11-09 13:19:01
+// 仪表盘数据 - 自动生成于 2026-11-09 (009062/026175 refresh)
 const dashboardData = {
   "products": [
     {
@@ -31632,7 +31632,7 @@ const dashboardData = {
       "mmrrc_id": "",
       "license_note": "本品系或其他产品的使用受Broad Institute有限许可条款约束（CRISPRCAS9）\n公司或营利实体使用小鼠需在发货前获得免费JAX Leap许可（FPMLICENSE）",
       "price_intl_4wk_male": 409.24,
-      "price_genotype_updated": "2026-09-15",
+      "price_genotype_updated": "2026-11-09",
       "price_by_genotype": [
         {
           "genotype_id": "HOM",
