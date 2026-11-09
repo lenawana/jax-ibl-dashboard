@@ -1,4 +1,4 @@
-// 仪表盘数据 - 自动生成于 2026-11-09 (009062/026175 refresh)
+// 仪表盘数据 - 自动生成于 2026-11-09 (price refresh 026175/006912)
 const dashboardData = {
   "products": [
     {
@@ -48919,7 +48919,7 @@ const dashboardData = {
       "license_note": "",
       "price_intl_4wk_male": 474.5,
       "price_dom_4wk_male": 0,
-      "price_genotype_updated": "2026-10-26",
+      "price_genotype_updated": "2026-11-09",
       "price_by_genotype": [
         {
           "genotype_id": "HEMI",
